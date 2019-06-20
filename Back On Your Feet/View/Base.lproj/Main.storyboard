@@ -463,6 +463,12 @@
                                         <state key="normal" title="Physical Activity">
                                             <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="physicalActivity:" destination="Acv-yU-ngO" eventType="touchUpInside" id="ftu-W8-EVf"/>
                                         </connections>
@@ -478,6 +484,12 @@
                                         <state key="normal" title="Preferred Food">
                                             <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="preferredFood:" destination="Acv-yU-ngO" eventType="touchUpInside" id="xMW-7S-H5w"/>
                                         </connections>
@@ -493,6 +505,12 @@
                                         <state key="normal" title="Gender">
                                             <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="gender:" destination="Acv-yU-ngO" eventType="touchUpInside" id="Pd2-KK-EfN"/>
                                         </connections>
@@ -528,13 +546,88 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="GenderButton" destination="4x9-mu-1GW" id="JYM-LL-xvE"/>
+                        <outlet property="PrefferedFoodButton" destination="tP8-Rp-fng" id="McQ-s6-w6O"/>
                         <outlet property="ageTextField" destination="M6p-kU-FlW" id="SDw-bX-HAk"/>
+                        <outlet property="currentAilmentButton" destination="rrW-SS-wlV" id="yiy-15-ccH"/>
+                        <outlet property="physicalActivityButton" destination="vAZ-Is-8Ud" id="VCF-in-XAw"/>
                         <segue destination="IbU-RH-eST" kind="show" identifier="moveNext" id="q5a-tr-C1e"/>
+                        <segue destination="rdr-Hn-Zld" kind="show" identifier="TocurrentAilment" id="ZB0-c3-PYQ"/>
+                        <segue destination="JH0-px-ydZ" kind="show" identifier="toPhysicalActivity" id="2xW-ne-1lZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ce2-ba-x35" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1552.8" y="-847.82608695652175"/>
+        </scene>
+        <!--Current Ailment View Controller-->
+        <scene sceneID="C5w-Rg-WjA">
+            <objects>
+                <viewController storyboardIdentifier="TocurrentAilment" id="rdr-Hn-Zld" customClass="CurrentAilmentViewController" customModule="Back_On_Your_Feet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mBK-gI-vBB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l3F-ul-rlr">
+                                <rect key="frame" x="0.0" y="64" width="375" height="529"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="598-OZ-zpW">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="598-OZ-zpW" id="apL-RV-0w0">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="rdr-Hn-Zld" id="8gL-QP-bz3"/>
+                                    <outlet property="delegate" destination="rdr-Hn-Zld" id="W0v-uv-uUx"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF2-xb-rOC">
+                                <rect key="frame" x="0.0" y="593" width="375" height="74"/>
+                                <color key="backgroundColor" red="0.20162028074264526" green="0.46324777603149414" blue="0.61517596244812012" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="CVd-03-l07"/>
+                                    <constraint firstAttribute="height" constant="74" id="Qu1-65-tF6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="35"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBound" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="SaveButtonPressed:" destination="rdr-Hn-Zld" eventType="touchUpInside" id="TCM-p3-zhf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="l3F-ul-rlr" firstAttribute="leading" secondItem="OuM-pv-3Us" secondAttribute="leading" id="J6K-7v-P6f"/>
+                            <constraint firstItem="CF2-xb-rOC" firstAttribute="bottom" secondItem="OuM-pv-3Us" secondAttribute="bottom" id="YO8-5D-4BT"/>
+                            <constraint firstItem="OuM-pv-3Us" firstAttribute="trailing" secondItem="l3F-ul-rlr" secondAttribute="trailing" id="ZzN-sB-3CW"/>
+                            <constraint firstItem="CF2-xb-rOC" firstAttribute="trailing" secondItem="OuM-pv-3Us" secondAttribute="trailing" id="g7s-cq-AMQ"/>
+                            <constraint firstItem="l3F-ul-rlr" firstAttribute="top" secondItem="OuM-pv-3Us" secondAttribute="top" id="l1q-iT-bbp"/>
+                            <constraint firstItem="CF2-xb-rOC" firstAttribute="leading" secondItem="OuM-pv-3Us" secondAttribute="leading" id="ndb-hh-vcf"/>
+                            <constraint firstItem="CF2-xb-rOC" firstAttribute="top" secondItem="l3F-ul-rlr" secondAttribute="bottom" id="v1a-fi-mxe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OuM-pv-3Us"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CRz-g8-vpA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1552.8" y="-1580.0599700149926"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="lFl-Qi-4bF">
@@ -1131,6 +1224,71 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KGc-pY-Tth" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3880.8000000000002" y="1089.8050974512744"/>
+        </scene>
+        <!--Physicaly Activity View Controller-->
+        <scene sceneID="eM9-Qf-MpY">
+            <objects>
+                <viewController storyboardIdentifier="toPhysicalActivity" id="JH0-px-ydZ" customClass="PhysicalyActivityViewController" customModule="Back_On_Your_Feet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YNj-05-B9t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aZ8-DK-A0z">
+                                <rect key="frame" x="0.0" y="64" width="375" height="529"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="pYR-iW-1Bj">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pYR-iW-1Bj" id="67b-9K-wJU">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="JH0-px-ydZ" id="2w2-m6-Ade"/>
+                                    <outlet property="delegate" destination="JH0-px-ydZ" id="lkk-KI-Gwb"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3A-ay-vAJ">
+                                <rect key="frame" x="0.0" y="593" width="375" height="74"/>
+                                <color key="backgroundColor" red="0.20162028069999999" green="0.463247776" blue="0.61517596240000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="SOm-n6-VVI"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="wv9-xw-eCF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="35"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBound" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="SaveButtonPressed:" destination="JH0-px-ydZ" eventType="touchUpInside" id="Mhf-hb-gkF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aZ8-DK-A0z" firstAttribute="top" secondItem="rv6-pJ-Ttd" secondAttribute="top" id="12N-pb-Jb8"/>
+                            <constraint firstItem="rv6-pJ-Ttd" firstAttribute="trailing" secondItem="aZ8-DK-A0z" secondAttribute="trailing" id="486-su-avE"/>
+                            <constraint firstItem="N3A-ay-vAJ" firstAttribute="leading" secondItem="rv6-pJ-Ttd" secondAttribute="leading" id="94O-dC-3C3"/>
+                            <constraint firstItem="N3A-ay-vAJ" firstAttribute="trailing" secondItem="rv6-pJ-Ttd" secondAttribute="trailing" id="RZD-Cl-Zp6"/>
+                            <constraint firstItem="N3A-ay-vAJ" firstAttribute="top" secondItem="aZ8-DK-A0z" secondAttribute="bottom" id="Wd4-sG-BVz"/>
+                            <constraint firstItem="aZ8-DK-A0z" firstAttribute="leading" secondItem="rv6-pJ-Ttd" secondAttribute="leading" id="dYX-XT-x7K"/>
+                            <constraint firstItem="N3A-ay-vAJ" firstAttribute="bottom" secondItem="rv6-pJ-Ttd" secondAttribute="bottom" id="lan-uy-L1A"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rv6-pJ-Ttd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Bj-Gk-mKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="850" y="-1580"/>
         </scene>
     </scenes>
     <resources>

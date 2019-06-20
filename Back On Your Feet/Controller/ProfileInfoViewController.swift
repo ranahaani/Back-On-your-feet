@@ -10,13 +10,27 @@ import UIKit
 import FirebaseCore
 import FirebaseAuth
 import FirebaseFirestore
+extension ProfileInfoViewController:currentAilmentDelegate,PhysicalyActivityDelegate{
+    func choosePhysicalyActivity(selectedphysicalActivity: String) {
+        physicalActivitys = selectedphysicalActivity
+    }
+    
+    func chooseCurrentAilment(selectedAilment: String) {
+        currentAilment = selectedAilment
+    }
+}
 class ProfileInfoViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource {
+ 
     var currentAilment:String?
     var preferedFood:String?
     var physicalActivitys:String?
     let db = Firestore.firestore()
     var ref: DocumentReference? = nil
-
+    
+    @IBOutlet weak var currentAilmentButton: UIButton!
+        @IBOutlet weak var physicalActivityButton: UIButton!
+        @IBOutlet weak var GenderButton: UIButton!
+        @IBOutlet weak var PrefferedFoodButton: UIButton!
     @IBOutlet weak var ageTextField: UITextField!
     var myPickerView : UIDatePicker!
     var dateFormatter: DateFormatter {
@@ -27,12 +41,32 @@ class ProfileInfoViewController: UIViewController,UIPickerViewDelegate,UIPickerV
     override func viewDidLoad() {
         super.viewDidLoad()
         getAge()
-    
-        
-        
+        physicalActivityButton.isHidden = true
+        PrefferedFoodButton.isHidden = true
+        GenderButton.isHidden = true
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        if currentAilment != nil && currentAilment != "None"{
+            physicalActivityButton.isHidden = false
+        }
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "TocurrentAilment" {
+            let destination = segue.destination as! CurrentAilmentViewController
+            destination.delegate = self
+            
+        }
+        else if segue.identifier == "toPhysicalActivity" {
+            let destination = segue.destination as! PhysicalyActivityViewController
+            destination.delegate = self
+        }
+    }
     @IBAction func nextButton(_ sender: Any) {
+        print(currentAilment ?? "")
+
         nextButtonClicked()
     }
     
@@ -86,45 +120,20 @@ class ProfileInfoViewController: UIViewController,UIPickerViewDelegate,UIPickerV
     
     
     @IBAction func currentAilment(_ sender: UIButton) {
-        
-       getOthersInfoDetails(with: "Current Alignment", message: "Enter lignment Details")
+        performSegue(withIdentifier: "TocurrentAilment", sender: self)
+      // getOthersInfoDetails(with: "Current Alignment", message: "Enter lignment Details")
     }
     @IBAction func physicalActivity(_ sender: UIButton) {
-        getOthersInfoDetails(with: "Physical Activity", message: "Enter Physicl activity")
+        //toPhysicalActivity
+        performSegue(withIdentifier: "toPhysicalActivity", sender: self)
+
+       // getOthersInfoDetails(with: "Physical Activity", message: "Enter Physicl activity")
     }
     @IBAction func preferredFood(_ sender: UIButton) {
-        getOthersInfoDetails(with: "Preffered Food", message: "Enter Prefered Food Details")
+        //getOthersInfoDetails(with: "Preffered Food", message: "Enter Prefered Food Details")
     }
     @IBAction func gender(_ sender: UIButton) {
         
-    }
-    
-    private func getOthersInfoDetails(with title:String,message:String){
-        let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alertVC.view.backgroundColor = #colorLiteral(red: 0.1997678876, green: 0.4631895423, blue: 0.615168035, alpha: 1)
-        alertVC.addTextField { (aligmentTextFiled) in
-            aligmentTextFiled.placeholder = "Enter \(title) Details...."
-        }
-        let doneButton = UIAlertAction(title: "Add", style: .default) { (_) in
-            if let input = alertVC.textFields![0].text{
-                if title == "Current Alignment"{
-                    
-                    self.currentAilment = input
-                }
-                else if title == "Physical Activity"{
-                    self.physicalActivitys  = input
-                }
-                else if title == "Preffered Food"{
-                    self.preferedFood = input
-                }
-            }
-            
-        }
-        let cancelButton = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-        alertVC.addAction(cancelButton)
-        alertVC.addAction(doneButton)
-        
-        present(alertVC,animated: true,completion: nil)
     }
 
     private func getAge(){
@@ -154,6 +163,8 @@ class ProfileInfoViewController: UIViewController,UIPickerViewDelegate,UIPickerV
     }
 }
 
+
+
 extension ProfileInfoViewController{
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -165,6 +176,39 @@ extension ProfileInfoViewController{
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
     }
+    
+    
+    
+    
+    
+//    private func getOthersInfoDetails(with title:String,message:String){
+//        let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
+//        alertVC.view.backgroundColor = #colorLiteral(red: 0.1997678876, green: 0.4631895423, blue: 0.615168035, alpha: 1)
+//        alertVC.addTextField { (aligmentTextFiled) in
+//            aligmentTextFiled.placeholder = "Enter \(title) Details...."
+//        }
+//        let doneButton = UIAlertAction(title: "Add", style: .default) { (_) in
+//            if let input = alertVC.textFields![0].text{
+//                if title == "Current Alignment"{
+//
+//                    self.currentAilment = input
+//                }
+//                else if title == "Physical Activity"{
+//                    self.physicalActivitys  = input
+//                }
+//                else if title == "Preffered Food"{
+//                    self.preferedFood = input
+//                }
+//            }
+//
+//        }
+//        let cancelButton = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+//        alertVC.addAction(cancelButton)
+//        alertVC.addAction(doneButton)
+//
+//        present(alertVC,animated: true,completion: nil)
+//    }
+
 }
 
 

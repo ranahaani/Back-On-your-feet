@@ -12,7 +12,6 @@
 		351A5C5A2266620900AE06CA /* NewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351A5C592266620900AE06CA /* NewsFeedViewController.swift */; };
 		35214FE0228E9F3E001FF332 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35214FDF228E9F3E001FF332 /* FeedbackViewController.swift */; };
 		355DEDD4225F4CFD002F44EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355DEDD3225F4CFD002F44EE /* AppDelegate.swift */; };
-		355DEDD6225F4CFD002F44EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355DEDD5225F4CFD002F44EE /* ViewController.swift */; };
 		355DEDD9225F4CFD002F44EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 355DEDD7225F4CFD002F44EE /* Main.storyboard */; };
 		355DEDDB225F4CFF002F44EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 355DEDDA225F4CFF002F44EE /* Assets.xcassets */; };
 		355DEDDE225F4CFF002F44EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 355DEDDC225F4CFF002F44EE /* LaunchScreen.storyboard */; };
@@ -26,6 +25,8 @@
 		35EADBF2227D563B0004B3AF /* JoggingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EADBF1227D563B0004B3AF /* JoggingViewController.swift */; };
 		35EADBF4227D592D0004B3AF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EADBF3227D592D0004B3AF /* SettingsViewController.swift */; };
 		A745543B226F3B9B00700056 /* ProfileInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A745543A226F3B9B00700056 /* ProfileInfoViewController.swift */; };
+		EAC21D0B22BA7EEF00E7A7AE /* CurrentAilmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC21D0A22BA7EEF00E7A7AE /* CurrentAilmentViewController.swift */; };
+		EAC21D0D22BB444D00E7A7AE /* PhysicalyActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC21D0C22BB444D00E7A7AE /* PhysicalyActivityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +35,6 @@
 		35214FDF228E9F3E001FF332 /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
 		355DEDD0225F4CFD002F44EE /* Back On Your Feet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Back On Your Feet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		355DEDD3225F4CFD002F44EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		355DEDD5225F4CFD002F44EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		355DEDD8225F4CFD002F44EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		355DEDDA225F4CFF002F44EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		355DEDDD225F4CFF002F44EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +51,8 @@
 		4D840484144866118CCA54DC /* Pods-Back On Your Feet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Back On Your Feet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Back On Your Feet/Pods-Back On Your Feet.debug.xcconfig"; sourceTree = "<group>"; };
 		A745543A226F3B9B00700056 /* ProfileInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoViewController.swift; sourceTree = "<group>"; };
 		AF459D8CA87CF2ED5DA69045 /* Pods_Back_On_Your_Feet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Back_On_Your_Feet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAC21D0A22BA7EEF00E7A7AE /* CurrentAilmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentAilmentViewController.swift; sourceTree = "<group>"; };
+		EAC21D0C22BB444D00E7A7AE /* PhysicalyActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhysicalyActivityViewController.swift; path = "Back On Your Feet/Controller/PhysicalyActivityViewController.swift"; sourceTree = SOURCE_ROOT; };
 		FF04464C301ED5E48D7D1473 /* Pods-Back On Your Feet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Back On Your Feet.release.xcconfig"; path = "Pods/Target Support Files/Pods-Back On Your Feet/Pods-Back On Your Feet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,9 +111,10 @@
 		35AC1B72227743DD00F0C837 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EAC21D0C22BB444D00E7A7AE /* PhysicalyActivityViewController.swift */,
 				35EADBF3227D592D0004B3AF /* SettingsViewController.swift */,
-				355DEDD5225F4CFD002F44EE /* ViewController.swift */,
 				35EADBED227CA0A10004B3AF /* GetDietPlansViewController.swift */,
+				EAC21D0A22BA7EEF00E7A7AE /* CurrentAilmentViewController.swift */,
 				35214FDF228E9F3E001FF332 /* FeedbackViewController.swift */,
 				35EADBF1227D563B0004B3AF /* JoggingViewController.swift */,
 				35AC1B6B2277390B00F0C837 /* LoginViewController.swift */,
@@ -293,11 +296,12 @@
 			files = (
 				35EADBEE227CA0A10004B3AF /* GetDietPlansViewController.swift in Sources */,
 				3510538222781E2000609CA9 /* SearchTableViewCell.swift in Sources */,
+				EAC21D0D22BB444D00E7A7AE /* PhysicalyActivityViewController.swift in Sources */,
 				35AC1B6E2277391800F0C837 /* SignupViewController.swift in Sources */,
+				EAC21D0B22BA7EEF00E7A7AE /* CurrentAilmentViewController.swift in Sources */,
 				35214FE0228E9F3E001FF332 /* FeedbackViewController.swift in Sources */,
 				35EADBF0227D4A180004B3AF /* ProgressViewController.swift in Sources */,
 				35AC1B7022773BAE00F0C837 /* SearchViewController.swift in Sources */,
-				355DEDD6225F4CFD002F44EE /* ViewController.swift in Sources */,
 				35EADBF2227D563B0004B3AF /* JoggingViewController.swift in Sources */,
 				355DEDD4225F4CFD002F44EE /* AppDelegate.swift in Sources */,
 				A745543B226F3B9B00700056 /* ProfileInfoViewController.swift in Sources */,
