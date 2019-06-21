@@ -25,6 +25,8 @@
 		35EADBF2227D563B0004B3AF /* JoggingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EADBF1227D563B0004B3AF /* JoggingViewController.swift */; };
 		35EADBF4227D592D0004B3AF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EADBF3227D592D0004B3AF /* SettingsViewController.swift */; };
 		A745543B226F3B9B00700056 /* ProfileInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A745543A226F3B9B00700056 /* ProfileInfoViewController.swift */; };
+		EA0827B622BCBE91006C59B2 /* GenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0827B522BCBE91006C59B2 /* GenderViewController.swift */; };
+		EA2D21B622BBCD7B00649559 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2D21B422BBCD7A00649559 /* MZTimerLabel.m */; };
 		EAC21D0B22BA7EEF00E7A7AE /* CurrentAilmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC21D0A22BA7EEF00E7A7AE /* CurrentAilmentViewController.swift */; };
 		EAC21D0D22BB444D00E7A7AE /* PhysicalyActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC21D0C22BB444D00E7A7AE /* PhysicalyActivityViewController.swift */; };
 /* End PBXBuildFile section */
@@ -51,6 +53,10 @@
 		4D840484144866118CCA54DC /* Pods-Back On Your Feet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Back On Your Feet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Back On Your Feet/Pods-Back On Your Feet.debug.xcconfig"; sourceTree = "<group>"; };
 		A745543A226F3B9B00700056 /* ProfileInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoViewController.swift; sourceTree = "<group>"; };
 		AF459D8CA87CF2ED5DA69045 /* Pods_Back_On_Your_Feet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Back_On_Your_Feet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA0827B522BCBE91006C59B2 /* GenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderViewController.swift; sourceTree = "<group>"; };
+		EA2D21B322BBCD7900649559 /* Back On Your Feet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Back On Your Feet-Bridging-Header.h"; sourceTree = "<group>"; };
+		EA2D21B422BBCD7A00649559 /* MZTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZTimerLabel.m; sourceTree = "<group>"; };
+		EA2D21B522BBCD7B00649559 /* MZTimerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZTimerLabel.h; sourceTree = "<group>"; };
 		EAC21D0A22BA7EEF00E7A7AE /* CurrentAilmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentAilmentViewController.swift; sourceTree = "<group>"; };
 		EAC21D0C22BB444D00E7A7AE /* PhysicalyActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhysicalyActivityViewController.swift; path = "Back On Your Feet/Controller/PhysicalyActivityViewController.swift"; sourceTree = SOURCE_ROOT; };
 		FF04464C301ED5E48D7D1473 /* Pods-Back On Your Feet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Back On Your Feet.release.xcconfig"; path = "Pods/Target Support Files/Pods-Back On Your Feet/Pods-Back On Your Feet.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +95,7 @@
 		355DEDD2225F4CFD002F44EE /* Back On Your Feet */ = {
 			isa = PBXGroup;
 			children = (
+				EA2D21B222BBCD5900649559 /* Timer */,
 				35AC1B752277444600F0C837 /* View */,
 				355DEDD3225F4CFD002F44EE /* AppDelegate.swift */,
 				35AC1B72227743DD00F0C837 /* Controller */,
@@ -113,6 +120,7 @@
 			children = (
 				EAC21D0C22BB444D00E7A7AE /* PhysicalyActivityViewController.swift */,
 				35EADBF3227D592D0004B3AF /* SettingsViewController.swift */,
+				EA0827B522BCBE91006C59B2 /* GenderViewController.swift */,
 				35EADBED227CA0A10004B3AF /* GetDietPlansViewController.swift */,
 				EAC21D0A22BA7EEF00E7A7AE /* CurrentAilmentViewController.swift */,
 				35214FDF228E9F3E001FF332 /* FeedbackViewController.swift */,
@@ -154,6 +162,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EA2D21B222BBCD5900649559 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				EA2D21B522BBCD7B00649559 /* MZTimerLabel.h */,
+				EA2D21B422BBCD7A00649559 /* MZTimerLabel.m */,
+				EA2D21B322BBCD7900649559 /* Back On Your Feet-Bridging-Header.h */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -188,6 +206,7 @@
 				TargetAttributes = {
 					355DEDCF225F4CFD002F44EE = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -259,6 +278,7 @@
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/MZTimerLabel/MZTimerLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
@@ -274,6 +294,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MZTimerLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
@@ -295,9 +316,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				35EADBEE227CA0A10004B3AF /* GetDietPlansViewController.swift in Sources */,
+				EA2D21B622BBCD7B00649559 /* MZTimerLabel.m in Sources */,
 				3510538222781E2000609CA9 /* SearchTableViewCell.swift in Sources */,
 				EAC21D0D22BB444D00E7A7AE /* PhysicalyActivityViewController.swift in Sources */,
 				35AC1B6E2277391800F0C837 /* SignupViewController.swift in Sources */,
+				EA0827B622BCBE91006C59B2 /* GenderViewController.swift in Sources */,
 				EAC21D0B22BA7EEF00E7A7AE /* CurrentAilmentViewController.swift in Sources */,
 				35214FE0228E9F3E001FF332 /* FeedbackViewController.swift in Sources */,
 				35EADBF0227D4A180004B3AF /* ProgressViewController.swift in Sources */,
@@ -454,12 +477,16 @@
 			baseConfigurationReference = 4D840484144866118CCA54DC /* Pods-Back On Your Feet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 434JC6R7SW;
 				INFOPLIST_FILE = "Back On Your Feet/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "haani.Back-On-Your-Feet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Back On Your Feet/Timer/Back On Your Feet-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -470,12 +497,15 @@
 			baseConfigurationReference = FF04464C301ED5E48D7D1473 /* Pods-Back On Your Feet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 434JC6R7SW;
 				INFOPLIST_FILE = "Back On Your Feet/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "haani.Back-On-Your-Feet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Back On Your Feet/Timer/Back On Your Feet-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -417,8 +417,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="q58-le-ZDh">
-                                <rect key="frame" x="62" y="141" width="250" height="428"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="q58-le-ZDh">
+                                <rect key="frame" x="62" y="141" width="250" height="455"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Age" borderStyle="roundedRect" placeholder="Age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M6p-kU-FlW">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="69"/>
@@ -431,8 +431,51 @@
                                         <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Weight in Kg" borderStyle="roundedRect" placeholder="Weight" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xAI-88-lys">
+                                        <rect key="frame" x="0.0" y="79" width="250" height="69"/>
+                                        <color key="backgroundColor" red="0.28091382980000001" green="0.60003572699999996" blue="0.61877816919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="69" id="A1l-ix-VH9"/>
+                                            <constraint firstAttribute="width" constant="250" id="gyF-ed-Hoh"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Height" borderStyle="roundedRect" placeholder="Height" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="aoe-SO-fhS">
+                                        <rect key="frame" x="0.0" y="158" width="250" height="69"/>
+                                        <color key="backgroundColor" red="0.28091382980000001" green="0.60003572699999996" blue="0.61877816919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="69" id="MUG-nH-Uo3"/>
+                                            <constraint firstAttribute="width" constant="250" id="VQY-Gd-C1p"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4x9-mu-1GW">
+                                        <rect key="frame" x="0.0" y="237" width="250" height="60"/>
+                                        <color key="backgroundColor" red="0.38025325536727905" green="0.82778757810592651" blue="0.90239113569259644" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="n3J-gy-GSY"/>
+                                            <constraint firstAttribute="height" constant="60" id="slI-9K-Z8R"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="25"/>
+                                        <state key="normal" title="Gender">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="gender:" destination="Acv-yU-ngO" eventType="touchUpInside" id="Pd2-KK-EfN"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrW-SS-wlV">
-                                        <rect key="frame" x="0.0" y="92" width="250" height="69"/>
+                                        <rect key="frame" x="0.0" y="307" width="250" height="69"/>
                                         <color key="backgroundColor" red="0.38025325536727905" green="0.82778757810592651" blue="0.90239113569259644" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="69" id="4Pa-nf-uai"/>
@@ -453,7 +496,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAZ-Is-8Ud">
-                                        <rect key="frame" x="0.0" y="184" width="250" height="69"/>
+                                        <rect key="frame" x="0.0" y="386" width="250" height="69"/>
                                         <color key="backgroundColor" red="0.38025325536727905" green="0.82778757810592651" blue="0.90239113569259644" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="69" id="FKg-e4-lnO"/>
@@ -471,48 +514,6 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="physicalActivity:" destination="Acv-yU-ngO" eventType="touchUpInside" id="ftu-W8-EVf"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tP8-Rp-fng">
-                                        <rect key="frame" x="0.0" y="276" width="250" height="69"/>
-                                        <color key="backgroundColor" red="0.38025325536727905" green="0.82778757810592651" blue="0.90239113569259644" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="250" id="Vu5-lQ-Mk0"/>
-                                            <constraint firstAttribute="height" constant="69" id="w6v-kb-t5e"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="25"/>
-                                        <state key="normal" title="Preferred Food">
-                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="preferredFood:" destination="Acv-yU-ngO" eventType="touchUpInside" id="xMW-7S-H5w"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4x9-mu-1GW">
-                                        <rect key="frame" x="0.0" y="368" width="250" height="60"/>
-                                        <color key="backgroundColor" red="0.38025325536727905" green="0.82778757810592651" blue="0.90239113569259644" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="250" id="n3J-gy-GSY"/>
-                                            <constraint firstAttribute="height" constant="60" id="slI-9K-Z8R"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="25"/>
-                                        <state key="normal" title="Gender">
-                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="gender:" destination="Acv-yU-ngO" eventType="touchUpInside" id="Pd2-KK-EfN"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -547,13 +548,15 @@
                     </navigationItem>
                     <connections>
                         <outlet property="GenderButton" destination="4x9-mu-1GW" id="JYM-LL-xvE"/>
-                        <outlet property="PrefferedFoodButton" destination="tP8-Rp-fng" id="McQ-s6-w6O"/>
                         <outlet property="ageTextField" destination="M6p-kU-FlW" id="SDw-bX-HAk"/>
                         <outlet property="currentAilmentButton" destination="rrW-SS-wlV" id="yiy-15-ccH"/>
+                        <outlet property="heightTextField" destination="aoe-SO-fhS" id="SAT-J3-u7m"/>
                         <outlet property="physicalActivityButton" destination="vAZ-Is-8Ud" id="VCF-in-XAw"/>
+                        <outlet property="weightTextField" destination="xAI-88-lys" id="UZW-bc-bzu"/>
                         <segue destination="IbU-RH-eST" kind="show" identifier="moveNext" id="q5a-tr-C1e"/>
                         <segue destination="rdr-Hn-Zld" kind="show" identifier="TocurrentAilment" id="ZB0-c3-PYQ"/>
                         <segue destination="JH0-px-ydZ" kind="show" identifier="toPhysicalActivity" id="2xW-ne-1lZ"/>
+                        <segue destination="T0O-kc-D2B" kind="show" identifier="toGender" id="pZg-Gq-ZsL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ce2-ba-x35" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1289,6 +1292,71 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Bj-Gk-mKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="850" y="-1580"/>
+        </scene>
+        <!--Gender View Controller-->
+        <scene sceneID="1TY-5D-I6G">
+            <objects>
+                <viewController storyboardIdentifier="toGender" id="T0O-kc-D2B" customClass="GenderViewController" customModule="Back_On_Your_Feet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qWE-VN-srZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A1X-At-Hqj">
+                                <rect key="frame" x="0.0" y="64" width="375" height="529"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="WrZ-Vv-rOe">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WrZ-Vv-rOe" id="gNo-wg-a8h">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="T0O-kc-D2B" id="PFr-Xp-2kc"/>
+                                    <outlet property="delegate" destination="T0O-kc-D2B" id="YTh-FO-Vbn"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTl-RN-8V5">
+                                <rect key="frame" x="0.0" y="593" width="375" height="74"/>
+                                <color key="backgroundColor" red="0.20162028069999999" green="0.463247776" blue="0.61517596240000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="0rk-FN-RXg"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="ixb-9r-5ao"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="35"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBound" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="SaveButtonPressed:" destination="T0O-kc-D2B" eventType="touchUpInside" id="Dag-U7-O9t"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="A1X-At-Hqj" firstAttribute="leading" secondItem="dQQ-9C-ABt" secondAttribute="leading" id="6tc-G0-Uiv"/>
+                            <constraint firstItem="PTl-RN-8V5" firstAttribute="trailing" secondItem="dQQ-9C-ABt" secondAttribute="trailing" id="7Kd-fA-pBD"/>
+                            <constraint firstItem="PTl-RN-8V5" firstAttribute="bottom" secondItem="dQQ-9C-ABt" secondAttribute="bottom" id="LrX-k8-Ich"/>
+                            <constraint firstItem="dQQ-9C-ABt" firstAttribute="trailing" secondItem="A1X-At-Hqj" secondAttribute="trailing" id="Yw2-3E-SyQ"/>
+                            <constraint firstItem="PTl-RN-8V5" firstAttribute="top" secondItem="A1X-At-Hqj" secondAttribute="bottom" id="dJR-gh-ecz"/>
+                            <constraint firstItem="PTl-RN-8V5" firstAttribute="leading" secondItem="dQQ-9C-ABt" secondAttribute="leading" id="gxS-Kv-7Wc"/>
+                            <constraint firstItem="A1X-At-Hqj" firstAttribute="top" secondItem="dQQ-9C-ABt" secondAttribute="top" id="sKX-qV-Z4z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dQQ-9C-ABt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gq8-kF-qaN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-113" y="-1581"/>
         </scene>
     </scenes>
     <resources>

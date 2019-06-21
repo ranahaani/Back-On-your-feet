@@ -23,11 +23,11 @@ class SignupViewController: UIViewController {
     }
     
     @IBAction func SignupAction(_ sender: Any) {
-//        SVProgressHUD.show(withStatus: "Creating....")
+        SVProgressHUD.show(withStatus: "Creating....")
 //        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!){ (user, error) in
 //            if error == nil {
 //                SVProgressHUD.dismiss()
-                self.performSegue(withIdentifier: "signupToMain", sender: self)
+self.performSegue(withIdentifier: "signupToMain", sender: self)
 //            }
 //            else{
 //                SVProgressHUD.dismiss()
@@ -39,7 +39,7 @@ class SignupViewController: UIViewController {
 //                self.present(alertController, animated: true, completion: nil)
 //            }
 //        }
-    }
+   }
 }
 
 extension UIViewController{

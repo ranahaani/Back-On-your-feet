@@ -10,7 +10,11 @@ import UIKit
 import FirebaseCore
 import FirebaseAuth
 import FirebaseFirestore
-extension ProfileInfoViewController:currentAilmentDelegate,PhysicalyActivityDelegate{
+extension ProfileInfoViewController:currentAilmentDelegate,PhysicalyActivityDelegate,GenderDelegate{
+    func chooseGender(selectedGender: String) {
+        gender = selectedGender
+    }
+    
     func choosePhysicalyActivity(selectedphysicalActivity: String) {
         physicalActivitys = selectedphysicalActivity
     }
@@ -22,7 +26,7 @@ extension ProfileInfoViewController:currentAilmentDelegate,PhysicalyActivityDele
 class ProfileInfoViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource {
  
     var currentAilment:String?
-    var preferedFood:String?
+    var gender:String?
     var physicalActivitys:String?
     let db = Firestore.firestore()
     var ref: DocumentReference? = nil
@@ -30,8 +34,10 @@ class ProfileInfoViewController: UIViewController,UIPickerViewDelegate,UIPickerV
     @IBOutlet weak var currentAilmentButton: UIButton!
         @IBOutlet weak var physicalActivityButton: UIButton!
         @IBOutlet weak var GenderButton: UIButton!
-        @IBOutlet weak var PrefferedFoodButton: UIButton!
+        //@IBOutlet weak var PrefferedFoodButton: UIButton!
     @IBOutlet weak var ageTextField: UITextField!
+    @IBOutlet weak var weightTextField: UITextField!
+    @IBOutlet weak var heightTextField: UITextField!
     var myPickerView : UIDatePicker!
     var dateFormatter: DateFormatter {
         let formatter = DateFormatter()
@@ -42,14 +48,23 @@ class ProfileInfoViewController: UIViewController,UIPickerViewDelegate,UIPickerV
         super.viewDidLoad()
         getAge()
         physicalActivityButton.isHidden = true
-        PrefferedFoodButton.isHidden = true
+        weightTextField.isHidden = true
         GenderButton.isHidden = true
+        heightTextField.isHidden = true
+        currentAilmentButton.isHidden = true
+
+        
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        if currentAilment != nil && currentAilment != "None"{
+       
+        if currentAilment == "Bone/Joints"{
             physicalActivityButton.isHidden = false
         }
+        if gender != nil{
+            currentAilmentButton.isHidden = false
+        }
+        
     }
     
     
@@ -61,6 +76,10 @@ class ProfileInfoViewController: UIViewController,UIPickerViewDelegate,UIPickerV
         }
         else if segue.identifier == "toPhysicalActivity" {
             let destination = segue.destination as! PhysicalyActivityViewController
+            destination.delegate = self
+        }
+        else if segue.identifier == "toGender" {
+            let destination = segue.destination as! GenderViewController
             destination.delegate = self
         }
     }
@@ -75,14 +94,18 @@ class ProfileInfoViewController: UIViewController,UIPickerViewDelegate,UIPickerV
         if db.collection("profileInfo").document().documentID.hashValue != 0{
             let userid = Auth.auth().currentUser?.uid
 
-            if currentAilment != nil,physicalActivitys != nil,preferedFood != nil{
+            if currentAilment != nil,heightTextField.text != nil,weightTextField.text != nil,ageTextField.text != nil{
                 self.db.collection("profileInfo").document(userid!).setData( [
                     "currentAilment": currentAilment ?? "",
-                    "physicalActivity": physicalActivitys ?? "",
-                    "preferredFood": preferedFood ?? ""
+                    "Gender": gender ?? "",
+                    "height":heightTextField.text!,
+                    "weightTextField":weightTextField.text!,
+                    "DOB":ageTextField.text!
+                   // "preferredFood": preferedFood ?? ""
                 ]) { err in
                     if let err = err {
                         print("Error adding document: \(err)")
+                        self.ShowAlert(title: "Error", message: err.localizedDescription)
                     } else {
                         self.performSegue(withIdentifier: "moveNext", sender: nil)
                         print("Document added with ")
@@ -100,7 +123,7 @@ class ProfileInfoViewController: UIViewController,UIPickerViewDelegate,UIPickerV
             db.collection("profileInfo").document(userid!).setData( [
                 "currentAilment": currentAilment ?? "",
                 "physicalActivity": physicalActivitys ?? "",
-                "preferredFood": preferedFood ?? ""
+                "Gender": gender ?? ""
             ]) { err in
                 if let err = err {
                     print("Error adding document: \(err)")
@@ -133,7 +156,7 @@ class ProfileInfoViewController: UIViewController,UIPickerViewDelegate,UIPickerV
         //getOthersInfoDetails(with: "Preffered Food", message: "Enter Prefered Food Details")
     }
     @IBAction func gender(_ sender: UIButton) {
-        
+        performSegue(withIdentifier: "toGender", sender: self)
     }
 
     private func getAge(){
@@ -156,6 +179,9 @@ class ProfileInfoViewController: UIViewController,UIPickerViewDelegate,UIPickerV
     
     @objc func doneDatePickerPressed(){
         self.view.endEditing(true)
+        if ageTextField.text != "" && ageTextField.text != "Age"{
+            weightTextField.isHidden = false
+        }
     }
     
     @objc func onDatePickerValueChanged(datePicker: UIDatePicker) {
@@ -175,6 +201,12 @@ extension ProfileInfoViewController{
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
+        if weightTextField.text != "" && weightTextField.text != "Weight in Kg"{
+            heightTextField.isHidden = false
+        }
+        if heightTextField.text != "" && heightTextField.text != "Height"{
+            GenderButton.isHidden = false
+        }
     }
     
     

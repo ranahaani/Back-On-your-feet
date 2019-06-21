@@ -13,6 +13,7 @@ pod 'Firebase/Firestore'
 pod 'Alamofire'
 pod 'SVProgressHUD'
 pod 'Charts'
+pod 'MZTimerLabel' 
 
   # Pods for Back On Your Feet
 

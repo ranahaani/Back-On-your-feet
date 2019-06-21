@@ -7,16 +7,25 @@
 //
 
 import UIKit
-
+import MZTimerLabel
 class JoggingViewController: UIViewController {
-
+    var redStopwatch = MZTimerLabel()
+    
+   
     var counter = 0
     var timer = Timer()
-    
-    @IBOutlet weak var countLabel: UILabel!
+    @IBOutlet weak var countLabel: MZTimerLabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        countLabel.isHidden = true
+        redStopwatch.frame = CGRect(x: 100, y: 200, width: 150, height: 100)
+        redStopwatch.timeLabel.font = UIFont.systemFont(ofSize: 30.0)
+        redStopwatch.timeLabel.textColor = UIColor.red
+        redStopwatch.timeFormat = "HH:mm:ss SS"
         
+         view.addSubview(redStopwatch)
+        redStopwatch.start()
+
         // Do any additional setup after loading the view.
     }
     
@@ -33,7 +42,8 @@ class JoggingViewController: UIViewController {
         countLabel.text = "0"
     }    // stop timer
     @IBAction func cancelTimerButtonTapped(sender: UIButton) {
-        timer.invalidate()
+       // timer.invalidate()
+        //countLabel.start()
     }
     
     // called every time interval from the timer
