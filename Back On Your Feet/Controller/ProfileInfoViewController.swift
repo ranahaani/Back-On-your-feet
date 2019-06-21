@@ -95,12 +95,13 @@ class ProfileInfoViewController: UIViewController,UIPickerViewDelegate,UIPickerV
             let userid = Auth.auth().currentUser?.uid
 
             if currentAilment != nil,heightTextField.text != nil,weightTextField.text != nil,ageTextField.text != nil{
+                
                 self.db.collection("profileInfo").document(userid!).setData( [
                     "currentAilment": currentAilment ?? "",
                     "Gender": gender ?? "",
                     "height":heightTextField.text!,
                     "weightTextField":weightTextField.text!,
-                    "DOB":ageTextField.text!
+                    "Age":calcAge(birthday: ageTextField.text!)
                    // "preferredFood": preferedFood ?? ""
                 ]) { err in
                     if let err = err {
@@ -139,7 +140,16 @@ class ProfileInfoViewController: UIViewController,UIPickerViewDelegate,UIPickerV
        
     }
     
-    
+    func calcAge(birthday: String) -> Int {
+        let dateFormater = DateFormatter()
+        dateFormater.dateFormat = "MM/dd/yyyy"
+        let birthdayDate = dateFormater.date(from: birthday)
+        let calendar: NSCalendar! = NSCalendar(calendarIdentifier: .gregorian)
+        let now = Date()
+        let calcAge = calendar.components(.year, from: birthdayDate!, to: now, options: [])
+        let age = calcAge.year
+        return age!
+    }
     
     
     @IBAction func currentAilment(_ sender: UIButton) {

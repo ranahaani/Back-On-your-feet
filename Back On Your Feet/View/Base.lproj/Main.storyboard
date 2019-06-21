@@ -782,10 +782,10 @@
             </objects>
             <point key="canvasLocation" x="3694" y="340"/>
         </scene>
-        <!--Get Diet Plans View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="TXa-Iv-3eb">
             <objects>
-                <viewController id="gbZ-yO-lmD" customClass="GetDietPlansViewController" customModule="Back_On_Your_Feet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gbZ-yO-lmD" customClass="HomeViewController" customModule="Back_On_Your_Feet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uyr-1h-LrJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1173,11 +1173,11 @@
             </objects>
             <point key="canvasLocation" x="4820" y="1089.8050974512744"/>
         </scene>
-        <!--Get Diet Plan-->
+        <!--Home-->
         <scene sceneID="kDj-xm-UIN">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hxb-Yj-aCW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Get Diet Plan" image="get-money" landscapeImage="get-money" selectedImage="get-money" id="Otg-48-1Tw"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="get-money" landscapeImage="get-money" selectedImage="home-24" id="Otg-48-1Tw"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nBK-u9-iPq">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -1363,6 +1363,7 @@
         <image name="get-money" width="24" height="24"/>
         <image name="getDietPlan1" width="474" height="698"/>
         <image name="getDietPlan2" width="474" height="353"/>
+        <image name="home-24" width="18" height="18"/>
         <image name="logoIcon" width="30" height="30"/>
         <image name="progress-report" width="24" height="24"/>
         <image name="rss (1)" width="24" height="24"/>

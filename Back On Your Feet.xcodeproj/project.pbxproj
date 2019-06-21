@@ -20,7 +20,7 @@
 		35AC1B6E2277391800F0C837 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC1B6D2277391800F0C837 /* SignupViewController.swift */; };
 		35AC1B7022773BAE00F0C837 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC1B6F22773BAE00F0C837 /* SearchViewController.swift */; };
 		35AC1B742277443400F0C837 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC1B732277443400F0C837 /* Search.swift */; };
-		35EADBEE227CA0A10004B3AF /* GetDietPlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EADBED227CA0A10004B3AF /* GetDietPlansViewController.swift */; };
+		35EADBEE227CA0A10004B3AF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EADBED227CA0A10004B3AF /* HomeViewController.swift */; };
 		35EADBF0227D4A180004B3AF /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EADBEF227D4A180004B3AF /* ProgressViewController.swift */; };
 		35EADBF2227D563B0004B3AF /* JoggingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EADBF1227D563B0004B3AF /* JoggingViewController.swift */; };
 		35EADBF4227D592D0004B3AF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EADBF3227D592D0004B3AF /* SettingsViewController.swift */; };
@@ -46,7 +46,7 @@
 		35AC1B6D2277391800F0C837 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		35AC1B6F22773BAE00F0C837 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		35AC1B732277443400F0C837 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
-		35EADBED227CA0A10004B3AF /* GetDietPlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDietPlansViewController.swift; sourceTree = "<group>"; };
+		35EADBED227CA0A10004B3AF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		35EADBEF227D4A180004B3AF /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		35EADBF1227D563B0004B3AF /* JoggingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoggingViewController.swift; sourceTree = "<group>"; };
 		35EADBF3227D592D0004B3AF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "Back On Your Feet/Controller/SettingsViewController.swift"; sourceTree = SOURCE_ROOT; };
@@ -121,7 +121,7 @@
 				EAC21D0C22BB444D00E7A7AE /* PhysicalyActivityViewController.swift */,
 				35EADBF3227D592D0004B3AF /* SettingsViewController.swift */,
 				EA0827B522BCBE91006C59B2 /* GenderViewController.swift */,
-				35EADBED227CA0A10004B3AF /* GetDietPlansViewController.swift */,
+				35EADBED227CA0A10004B3AF /* HomeViewController.swift */,
 				EAC21D0A22BA7EEF00E7A7AE /* CurrentAilmentViewController.swift */,
 				35214FDF228E9F3E001FF332 /* FeedbackViewController.swift */,
 				35EADBF1227D563B0004B3AF /* JoggingViewController.swift */,
@@ -315,7 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35EADBEE227CA0A10004B3AF /* GetDietPlansViewController.swift in Sources */,
+				35EADBEE227CA0A10004B3AF /* HomeViewController.swift in Sources */,
 				EA2D21B622BBCD7B00649559 /* MZTimerLabel.m in Sources */,
 				3510538222781E2000609CA9 /* SearchTableViewCell.swift in Sources */,
 				EAC21D0D22BB444D00E7A7AE /* PhysicalyActivityViewController.swift in Sources */,

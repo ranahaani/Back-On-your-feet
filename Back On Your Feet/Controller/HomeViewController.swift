@@ -10,7 +10,7 @@ import UIKit
 import FirebaseFirestore
 import SVProgressHUD
 import FirebaseAuth
-class GetDietPlansViewController: UIViewController {
+class HomeViewController: UIViewController {
     @IBOutlet weak var startJogging: UIButton!
     @IBOutlet weak var startPushups: UIButton!
     @IBOutlet weak var weightLoss: UIButton!
