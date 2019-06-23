@@ -26,7 +26,9 @@
 		35EADBF4227D592D0004B3AF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EADBF3227D592D0004B3AF /* SettingsViewController.swift */; };
 		A745543B226F3B9B00700056 /* ProfileInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A745543A226F3B9B00700056 /* ProfileInfoViewController.swift */; };
 		EA0827B622BCBE91006C59B2 /* GenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0827B522BCBE91006C59B2 /* GenderViewController.swift */; };
-		EA2D21B622BBCD7B00649559 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2D21B422BBCD7A00649559 /* MZTimerLabel.m */; };
+		EA3286F822BF57AB0044B7C1 /* infoAboutHeight.json in Resources */ = {isa = PBXBuildFile; fileRef = EA3286F722BF57AB0044B7C1 /* infoAboutHeight.json */; };
+		EA3286FB22BF78830044B7C1 /* HeightWidthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3286FA22BF78830044B7C1 /* HeightWidthViewController.swift */; };
+		EA3286FD22BF7C470044B7C1 /* HeightWidthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3286FC22BF7C470044B7C1 /* HeightWidthTableViewCell.swift */; };
 		EAC21D0B22BA7EEF00E7A7AE /* CurrentAilmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC21D0A22BA7EEF00E7A7AE /* CurrentAilmentViewController.swift */; };
 		EAC21D0D22BB444D00E7A7AE /* PhysicalyActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC21D0C22BB444D00E7A7AE /* PhysicalyActivityViewController.swift */; };
 /* End PBXBuildFile section */
@@ -54,9 +56,10 @@
 		A745543A226F3B9B00700056 /* ProfileInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoViewController.swift; sourceTree = "<group>"; };
 		AF459D8CA87CF2ED5DA69045 /* Pods_Back_On_Your_Feet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Back_On_Your_Feet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0827B522BCBE91006C59B2 /* GenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderViewController.swift; sourceTree = "<group>"; };
-		EA2D21B322BBCD7900649559 /* Back On Your Feet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Back On Your Feet-Bridging-Header.h"; sourceTree = "<group>"; };
-		EA2D21B422BBCD7A00649559 /* MZTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZTimerLabel.m; sourceTree = "<group>"; };
-		EA2D21B522BBCD7B00649559 /* MZTimerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZTimerLabel.h; sourceTree = "<group>"; };
+		EA3286F722BF57AB0044B7C1 /* infoAboutHeight.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = infoAboutHeight.json; sourceTree = "<group>"; };
+		EA3286F922BF74A70044B7C1 /* Back On Your Feet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Back On Your Feet-Bridging-Header.h"; sourceTree = "<group>"; };
+		EA3286FA22BF78830044B7C1 /* HeightWidthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightWidthViewController.swift; sourceTree = "<group>"; };
+		EA3286FC22BF7C470044B7C1 /* HeightWidthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightWidthTableViewCell.swift; sourceTree = "<group>"; };
 		EAC21D0A22BA7EEF00E7A7AE /* CurrentAilmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentAilmentViewController.swift; sourceTree = "<group>"; };
 		EAC21D0C22BB444D00E7A7AE /* PhysicalyActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhysicalyActivityViewController.swift; path = "Back On Your Feet/Controller/PhysicalyActivityViewController.swift"; sourceTree = SOURCE_ROOT; };
 		FF04464C301ED5E48D7D1473 /* Pods-Back On Your Feet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Back On Your Feet.release.xcconfig"; path = "Pods/Target Support Files/Pods-Back On Your Feet/Pods-Back On Your Feet.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +127,7 @@
 				35EADBED227CA0A10004B3AF /* HomeViewController.swift */,
 				EAC21D0A22BA7EEF00E7A7AE /* CurrentAilmentViewController.swift */,
 				35214FDF228E9F3E001FF332 /* FeedbackViewController.swift */,
+				EA3286FA22BF78830044B7C1 /* HeightWidthViewController.swift */,
 				35EADBF1227D563B0004B3AF /* JoggingViewController.swift */,
 				35AC1B6B2277390B00F0C837 /* LoginViewController.swift */,
 				35AC1B6D2277391800F0C837 /* SignupViewController.swift */,
@@ -141,6 +145,7 @@
 				355DEDDC225F4CFF002F44EE /* LaunchScreen.storyboard */,
 				355DEDD7225F4CFD002F44EE /* Main.storyboard */,
 				3510538122781E2000609CA9 /* SearchTableViewCell.swift */,
+				EA3286FC22BF7C470044B7C1 /* HeightWidthTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -165,9 +170,8 @@
 		EA2D21B222BBCD5900649559 /* Timer */ = {
 			isa = PBXGroup;
 			children = (
-				EA2D21B522BBCD7B00649559 /* MZTimerLabel.h */,
-				EA2D21B422BBCD7A00649559 /* MZTimerLabel.m */,
-				EA2D21B322BBCD7900649559 /* Back On Your Feet-Bridging-Header.h */,
+				EA3286F922BF74A70044B7C1 /* Back On Your Feet-Bridging-Header.h */,
+				EA3286F722BF57AB0044B7C1 /* infoAboutHeight.json */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -237,6 +241,7 @@
 				355DEDDE225F4CFF002F44EE /* LaunchScreen.storyboard in Resources */,
 				35AC1B6A2277383700F0C837 /* GoogleService-Info.plist in Resources */,
 				355DEDDB225F4CFF002F44EE /* Assets.xcassets in Resources */,
+				EA3286F822BF57AB0044B7C1 /* infoAboutHeight.json in Resources */,
 				355DEDD9225F4CFD002F44EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,7 +321,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				35EADBEE227CA0A10004B3AF /* HomeViewController.swift in Sources */,
-				EA2D21B622BBCD7B00649559 /* MZTimerLabel.m in Sources */,
 				3510538222781E2000609CA9 /* SearchTableViewCell.swift in Sources */,
 				EAC21D0D22BB444D00E7A7AE /* PhysicalyActivityViewController.swift in Sources */,
 				35AC1B6E2277391800F0C837 /* SignupViewController.swift in Sources */,
@@ -326,10 +330,12 @@
 				35EADBF0227D4A180004B3AF /* ProgressViewController.swift in Sources */,
 				35AC1B7022773BAE00F0C837 /* SearchViewController.swift in Sources */,
 				35EADBF2227D563B0004B3AF /* JoggingViewController.swift in Sources */,
+				EA3286FB22BF78830044B7C1 /* HeightWidthViewController.swift in Sources */,
 				355DEDD4225F4CFD002F44EE /* AppDelegate.swift in Sources */,
 				A745543B226F3B9B00700056 /* ProfileInfoViewController.swift in Sources */,
 				35AC1B742277443400F0C837 /* Search.swift in Sources */,
 				35EADBF4227D592D0004B3AF /* SettingsViewController.swift in Sources */,
+				EA3286FD22BF7C470044B7C1 /* HeightWidthTableViewCell.swift in Sources */,
 				35AC1B6C2277390B00F0C837 /* LoginViewController.swift in Sources */,
 				351A5C5A2266620900AE06CA /* NewsFeedViewController.swift in Sources */,
 			);
