@@ -31,6 +31,9 @@
 		EA3286FD22BF7C470044B7C1 /* HeightWidthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3286FC22BF7C470044B7C1 /* HeightWidthTableViewCell.swift */; };
 		EAC21D0B22BA7EEF00E7A7AE /* CurrentAilmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC21D0A22BA7EEF00E7A7AE /* CurrentAilmentViewController.swift */; };
 		EAC21D0D22BB444D00E7A7AE /* PhysicalyActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC21D0C22BB444D00E7A7AE /* PhysicalyActivityViewController.swift */; };
+		EAE3D0CD22C0911E00E6E26C /* WeekDietplanCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE3D0CC22C0911E00E6E26C /* WeekDietplanCollectionViewController.swift */; };
+		EAE3D0CF22C0931700E6E26C /* WeeklyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE3D0CE22C0931700E6E26C /* WeeklyCollectionViewCell.swift */; };
+		EAE3D0D122C0973400E6E26C /* CustomFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE3D0D022C0973400E6E26C /* CustomFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +65,9 @@
 		EA3286FC22BF7C470044B7C1 /* HeightWidthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightWidthTableViewCell.swift; sourceTree = "<group>"; };
 		EAC21D0A22BA7EEF00E7A7AE /* CurrentAilmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentAilmentViewController.swift; sourceTree = "<group>"; };
 		EAC21D0C22BB444D00E7A7AE /* PhysicalyActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhysicalyActivityViewController.swift; path = "Back On Your Feet/Controller/PhysicalyActivityViewController.swift"; sourceTree = SOURCE_ROOT; };
+		EAE3D0CC22C0911E00E6E26C /* WeekDietplanCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDietplanCollectionViewController.swift; sourceTree = "<group>"; };
+		EAE3D0CE22C0931700E6E26C /* WeeklyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyCollectionViewCell.swift; sourceTree = "<group>"; };
+		EAE3D0D022C0973400E6E26C /* CustomFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFlowLayout.swift; sourceTree = "<group>"; };
 		FF04464C301ED5E48D7D1473 /* Pods-Back On Your Feet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Back On Your Feet.release.xcconfig"; path = "Pods/Target Support Files/Pods-Back On Your Feet/Pods-Back On Your Feet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +136,7 @@
 				EA3286FA22BF78830044B7C1 /* HeightWidthViewController.swift */,
 				35EADBF1227D563B0004B3AF /* JoggingViewController.swift */,
 				35AC1B6B2277390B00F0C837 /* LoginViewController.swift */,
+				EAE3D0CC22C0911E00E6E26C /* WeekDietplanCollectionViewController.swift */,
 				35AC1B6D2277391800F0C837 /* SignupViewController.swift */,
 				35EADBEF227D4A180004B3AF /* ProgressViewController.swift */,
 				A745543A226F3B9B00700056 /* ProfileInfoViewController.swift */,
@@ -145,6 +152,8 @@
 				355DEDDC225F4CFF002F44EE /* LaunchScreen.storyboard */,
 				355DEDD7225F4CFD002F44EE /* Main.storyboard */,
 				3510538122781E2000609CA9 /* SearchTableViewCell.swift */,
+				EAE3D0CE22C0931700E6E26C /* WeeklyCollectionViewCell.swift */,
+				EAE3D0D022C0973400E6E26C /* CustomFlowLayout.swift */,
 				EA3286FC22BF7C470044B7C1 /* HeightWidthTableViewCell.swift */,
 			);
 			path = View;
@@ -320,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAE3D0CD22C0911E00E6E26C /* WeekDietplanCollectionViewController.swift in Sources */,
 				35EADBEE227CA0A10004B3AF /* HomeViewController.swift in Sources */,
 				3510538222781E2000609CA9 /* SearchTableViewCell.swift in Sources */,
 				EAC21D0D22BB444D00E7A7AE /* PhysicalyActivityViewController.swift in Sources */,
@@ -332,10 +342,12 @@
 				35EADBF2227D563B0004B3AF /* JoggingViewController.swift in Sources */,
 				EA3286FB22BF78830044B7C1 /* HeightWidthViewController.swift in Sources */,
 				355DEDD4225F4CFD002F44EE /* AppDelegate.swift in Sources */,
+				EAE3D0D122C0973400E6E26C /* CustomFlowLayout.swift in Sources */,
 				A745543B226F3B9B00700056 /* ProfileInfoViewController.swift in Sources */,
 				35AC1B742277443400F0C837 /* Search.swift in Sources */,
 				35EADBF4227D592D0004B3AF /* SettingsViewController.swift in Sources */,
 				EA3286FD22BF7C470044B7C1 /* HeightWidthTableViewCell.swift in Sources */,
+				EAE3D0CF22C0931700E6E26C /* WeeklyCollectionViewCell.swift in Sources */,
 				35AC1B6C2277390B00F0C837 /* LoginViewController.swift in Sources */,
 				351A5C5A2266620900AE06CA /* NewsFeedViewController.swift in Sources */,
 			);
@@ -488,6 +500,7 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 434JC6R7SW;
 				INFOPLIST_FILE = "Back On Your Feet/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "haani.Back-On-Your-Feet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -508,6 +521,7 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 434JC6R7SW;
 				INFOPLIST_FILE = "Back On Your Feet/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "haani.Back-On-Your-Feet";
 				PRODUCT_NAME = "$(TARGET_NAME)";

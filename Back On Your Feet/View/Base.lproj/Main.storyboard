@@ -641,7 +641,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="T2d-ut-3Q6">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="159" id="Dcu-dr-3eB" customClass="SearchTableViewCell" customModule="Back_On_Your_Feet" customModuleProvider="target">
@@ -731,7 +731,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BSj-Ai-Z4m">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -791,7 +791,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="XEw-Sx-V4C">
-                                <rect key="frame" x="62" y="178" width="250" height="270"/>
+                                <rect key="frame" x="62" y="178" width="250" height="375"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwi-yi-JNm">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="60"/>
@@ -849,6 +849,30 @@
                                                 <integer key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="8ZQ-7e-LES" kind="show" id="PrE-hf-2SY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Atm-XJ-KUD">
+                                        <rect key="frame" x="0.0" y="315" width="250" height="60"/>
+                                        <color key="backgroundColor" red="0.38025325539999999" green="0.82778757810000003" blue="0.90239113569999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="YL1-rx-Tzp"/>
+                                            <constraint firstAttribute="width" constant="250" id="nFh-jV-WpO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="25"/>
+                                        <state key="normal" title="Diet Plan">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="qoE-er-632" kind="show" id="AtZ-Wf-qtf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -1081,7 +1105,99 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="viX-88-xFo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5726" y="-282"/>
+            <point key="canvasLocation" x="5809" y="635"/>
+        </scene>
+        <!--Week Dietplan Collection View Controller-->
+        <scene sceneID="HWl-xI-Bp4">
+            <objects>
+                <viewController id="N8c-4Q-cry" customClass="WeekDietplanCollectionViewController" customModule="Back_On_Your_Feet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p1K-cA-G5q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4DQ-Jq-9eH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" red="0.20162028069999999" green="0.463247776" blue="0.61517596240000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="o6g-4H-vIe" customClass="CustomFlowLayout" customModule="Back_On_Your_Feet" customModuleProvider="target">
+                                    <size key="itemSize" width="374" height="385"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="wt8-IN-cBx" customClass="WeeklyCollectionViewCell" customModule="Back_On_Your_Feet" customModuleProvider="target">
+                                        <rect key="frame" x="0.5" y="0.0" width="374" height="385"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="385"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="firstWeekDietPlan" translatesAutoresizingMaskIntoConstraints="NO" id="2pQ-b2-V7B">
+                                                    <rect key="frame" x="0.5" y="77" width="373" height="202"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="202" id="kQB-J8-PpF"/>
+                                                        <constraint firstAttribute="width" constant="373" id="uIN-jQ-1LB"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KpW-my-SHT">
+                                                    <rect key="frame" x="12" y="284" width="350" height="96"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Week Diet Plan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkG-B2-aoc">
+                                                            <rect key="frame" x="0.0" y="0.0" width="350" height="47"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="342" id="hyu-ww-xBN"/>
+                                                                <constraint firstAttribute="height" constant="47" id="poV-qj-4hf"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="28"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day 1 -  1,214 calories - 62 g protein..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kx0-jJ-WbF">
+                                                            <rect key="frame" x="0.0" y="47" width="350" height="49"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="334" id="MCG-nP-oUy"/>
+                                                                <constraint firstAttribute="height" constant="49" id="vP2-kK-F56"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="KpW-my-SHT" secondAttribute="bottom" constant="5" id="LsY-oe-xPt"/>
+                                            <constraint firstItem="KpW-my-SHT" firstAttribute="leading" secondItem="wt8-IN-cBx" secondAttribute="leading" constant="12" id="eJB-Au-xT9"/>
+                                            <constraint firstItem="KpW-my-SHT" firstAttribute="top" secondItem="2pQ-b2-V7B" secondAttribute="bottom" constant="5" id="lMo-65-H7C"/>
+                                            <constraint firstAttribute="trailing" secondItem="KpW-my-SHT" secondAttribute="trailing" constant="12" id="vsZ-s1-0Hx"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="WeekLyDietPlanLabel" destination="fkG-B2-aoc" id="0bU-zu-CuI"/>
+                                            <outlet property="WeeklyDietPlanImage" destination="2pQ-b2-V7B" id="PPu-e7-hOh"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="N8c-4Q-cry" id="Pk0-K1-taF"/>
+                                    <outlet property="delegate" destination="N8c-4Q-cry" id="ffq-w2-oiu"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20162028069999999" green="0.463247776" blue="0.61517596240000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="4DQ-Jq-9eH" secondAttribute="trailing" id="6Eb-nO-eZ3"/>
+                            <constraint firstItem="4DQ-Jq-9eH" firstAttribute="bottom" secondItem="Qmq-WX-vld" secondAttribute="bottom" id="OgQ-kp-HFP"/>
+                            <constraint firstItem="4DQ-Jq-9eH" firstAttribute="top" secondItem="p1K-cA-G5q" secondAttribute="top" id="Pgb-Ca-gpM"/>
+                            <constraint firstItem="4DQ-Jq-9eH" firstAttribute="leading" secondItem="p1K-cA-G5q" secondAttribute="leading" id="qB4-qy-7Bw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qmq-WX-vld"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IJj-xH-car"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a0c-CN-XQ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5050" y="-1217"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="AcG-P1-Gcl">
@@ -1179,40 +1295,107 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Jx-2H-mfW">
-                                <rect key="frame" x="16" y="283.5" width="343" height="100"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.32998127259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you follow up diet plan?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvh-Ag-8R9">
+                                <rect key="frame" x="16" y="84" width="343" height="75"/>
+                                <color key="backgroundColor" red="0.20162028069999999" green="0.463247776" blue="0.61517596240000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="x6m-vk-FBK"/>
+                                    <constraint firstAttribute="width" constant="343" id="59y-0T-YHo"/>
+                                    <constraint firstAttribute="height" constant="75" id="ISE-Hy-A6A"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
-                                <state key="normal" title="Feedback for wieght loss">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                            </button>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="26"/>
+                                <color key="highlightedColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="112" translatesAutoresizingMaskIntoConstraints="NO" id="aEv-dI-OVM">
+                                <rect key="frame" x="23" y="167" width="336" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCb-jk-V5I">
+                                        <rect key="frame" x="0.0" y="0.0" width="112" height="50"/>
+                                        <color key="backgroundColor" red="0.24726972025655183" green="0.46415560233160624" blue="0.12456017300351827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="08w-3n-Ejt"/>
+                                            <constraint firstAttribute="width" constant="112" id="duu-6T-01O"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="26"/>
+                                        <state key="normal" title="Yes">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bI-6p-9cW">
+                                        <rect key="frame" x="224" y="0.0" width="112" height="50"/>
+                                        <color key="backgroundColor" red="0.72514572535699484" green="0.14443314059797377" blue="0.10945380200653573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="112" id="KBP-zq-ZoP"/>
+                                            <constraint firstAttribute="height" constant="50" id="WRW-Ac-G7B"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="26"/>
+                                        <state key="normal" title="No">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much you loss weight?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWw-a0-mLt">
+                                <rect key="frame" x="16" y="225" width="343" height="75"/>
+                                <color key="backgroundColor" red="0.20162028069999999" green="0.463247776" blue="0.61517596240000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="CqI-H1-0uO"/>
+                                    <constraint firstAttribute="width" constant="343" id="ucU-R4-RFx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="26"/>
+                                <color key="highlightedColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Height" borderStyle="roundedRect" placeholder="Height" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dhN-zr-UrX">
+                                <rect key="frame" x="62" y="308" width="250" height="69"/>
+                                <color key="backgroundColor" red="0.28091382980000001" green="0.60003572699999996" blue="0.61877816919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="3Hg-A5-mGy"/>
+                                    <constraint firstAttribute="height" constant="69" id="toY-4F-BKG"/>
+                                </constraints>
+                                <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.1997678876" green="0.46318954229999998" blue="0.61516803499999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="8Jx-2H-mfW" firstAttribute="centerY" secondItem="iIu-6e-lHq" secondAttribute="centerY" id="JOm-Qc-nKR"/>
-                            <constraint firstItem="8Jx-2H-mfW" firstAttribute="leading" secondItem="KTf-wQ-KUA" secondAttribute="leading" constant="16" id="cWr-AG-Uiz"/>
-                            <constraint firstItem="KTf-wQ-KUA" firstAttribute="trailing" secondItem="8Jx-2H-mfW" secondAttribute="trailing" constant="16" id="tvc-Hw-oEp"/>
+                            <constraint firstItem="dhN-zr-UrX" firstAttribute="leading" secondItem="KTf-wQ-KUA" secondAttribute="leading" constant="62" id="9na-FK-B41"/>
+                            <constraint firstItem="iWw-a0-mLt" firstAttribute="leading" secondItem="KTf-wQ-KUA" secondAttribute="leading" constant="16" id="DrA-Ih-hLk"/>
+                            <constraint firstItem="cvh-Ag-8R9" firstAttribute="leading" secondItem="KTf-wQ-KUA" secondAttribute="leading" constant="16" id="VTo-br-ADL"/>
+                            <constraint firstItem="KTf-wQ-KUA" firstAttribute="trailing" secondItem="iWw-a0-mLt" secondAttribute="trailing" constant="16" id="WTh-jY-931"/>
+                            <constraint firstItem="aEv-dI-OVM" firstAttribute="leading" secondItem="KTf-wQ-KUA" secondAttribute="leading" constant="23" id="aW4-WA-N5v"/>
+                            <constraint firstItem="KTf-wQ-KUA" firstAttribute="trailing" secondItem="dhN-zr-UrX" secondAttribute="trailing" constant="63" id="bYy-Wn-xd9"/>
+                            <constraint firstItem="aEv-dI-OVM" firstAttribute="top" secondItem="cvh-Ag-8R9" secondAttribute="bottom" constant="8" id="dqd-Kw-dYx"/>
+                            <constraint firstItem="KTf-wQ-KUA" firstAttribute="trailing" secondItem="cvh-Ag-8R9" secondAttribute="trailing" constant="16" id="gIP-Na-ZDb"/>
+                            <constraint firstItem="cvh-Ag-8R9" firstAttribute="top" secondItem="KTf-wQ-KUA" secondAttribute="top" constant="20" id="h6F-Vd-1Uq"/>
+                            <constraint firstItem="dhN-zr-UrX" firstAttribute="top" secondItem="iWw-a0-mLt" secondAttribute="bottom" constant="8" id="izg-E8-TlC"/>
+                            <constraint firstItem="KTf-wQ-KUA" firstAttribute="trailing" secondItem="aEv-dI-OVM" secondAttribute="trailing" constant="16" id="lfk-kR-tDG"/>
+                            <constraint firstItem="iWw-a0-mLt" firstAttribute="top" secondItem="aEv-dI-OVM" secondAttribute="bottom" constant="8" id="tOg-Qd-0Vf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KTf-wQ-KUA"/>
                     </view>
-                    <navigationItem key="navigationItem" id="uma-6e-Xwr">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="fQl-F9-bGa">
-                            <connections>
-                                <segue destination="N3Y-3k-k8r" kind="show" id="ccP-9B-Rfu"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="uma-6e-Xwr"/>
                     <connections>
-                        <outlet property="feedBackButtonPressed" destination="8Jx-2H-mfW" id="cb0-wR-Puz"/>
+                        <outlet property="howMuchLabel" destination="iWw-a0-mLt" id="Kfz-mM-KW2"/>
+                        <outlet property="howMuchTextFIeld" destination="dhN-zr-UrX" id="xir-mj-Na4"/>
+                        <outlet property="noButtonPressed" destination="9bI-6p-9cW" id="p29-XJ-2n4"/>
+                        <outlet property="yesButtonPressed" destination="mCb-jk-V5I" id="tdR-3x-f5T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLn-RM-Ru1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4820" y="1089.8050974512744"/>
+            <point key="canvasLocation" x="4956" y="383.65817091454278"/>
         </scene>
         <!--Home-->
         <scene sceneID="kDj-xm-UIN">
@@ -1261,9 +1444,6 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="8ZQ-7e-LES" kind="relationship" relationship="rootViewController" id="t0J-Ia-Iqs"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KGc-pY-Tth" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1399,8 +1579,27 @@
             </objects>
             <point key="canvasLocation" x="-113" y="-1581"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OaV-vX-cKV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qoE-er-632" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="O0z-qo-NrD">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="N8c-4Q-cry" kind="relationship" relationship="rootViewController" id="Pcp-Pd-639"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yvd-Bf-XZ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4354" y="-1217"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="firstWeekDietPlan" width="498" height="493.38156127929688"/>
         <image name="home-24" width="18" height="18"/>
         <image name="logoIcon" width="30" height="30"/>
         <image name="progress-report" width="24" height="24"/>
@@ -1410,8 +1609,7 @@
         <image name="v" width="152.5" height="271"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ccP-9B-Rfu"/>
-        <segue reference="Jcc-qU-5ed"/>
+        <segue reference="q5a-tr-C1e"/>
         <segue reference="4TA-x5-VRT"/>
         <segue reference="gxV-fW-iOt"/>
     </inferredMetricsTieBreakers>

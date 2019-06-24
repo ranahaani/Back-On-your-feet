@@ -29,21 +29,21 @@ class LoginViewController: UIViewController {
     }
     */
     @IBAction func loginAction(_ sender: Any) {
-        SVProgressHUD.show(withStatus: "Logining...")
-        Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
-           if error == nil{
-                SVProgressHUD.dismiss()
+//        SVProgressHUD.show(withStatus: "Logining...")
+//        Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
+//           if error == nil{
+//                SVProgressHUD.dismiss()
                 self.performSegue(withIdentifier: "signinToMain", sender: self)
-            }
-            else{
-                SVProgressHUD.dismiss()
-                let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
-                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-
-               alertController.addAction(defaultAction)
-               self.present(alertController, animated: true, completion: nil)
-           }
-       }
+//            }
+//            else{
+//                SVProgressHUD.dismiss()
+//                let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+//                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+//
+//               alertController.addAction(defaultAction)
+//               self.present(alertController, animated: true, completion: nil)
+//           }
+//       }
 
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

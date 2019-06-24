@@ -100,7 +100,7 @@ class ProfileInfoViewController: UIViewController,UIPickerViewDelegate,UIPickerV
                     "currentAilment": currentAilment ?? "",
                     "Gender": gender ?? "",
                     "height":heightTextField.text!,
-                    "weightTextField":weightTextField.text!,
+                    "weight":weightTextField.text!,
                     "Age":calcAge(birthday: ageTextField.text!)
                    // "preferredFood": preferedFood ?? ""
                 ]) { err in
