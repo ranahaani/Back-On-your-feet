@@ -24,8 +24,14 @@ class FeedbackViewController: UIViewController {
         
         howMuchLabel.isHidden = true
         howMuchTextFIeld.isHidden = true
+        noButtonPressed.addTarget(self, action: #selector(noButtonPressed(_:)), for: .touchUpInside)
         yesButtonPressed.addTarget(self, action: #selector(feedBackButtonPressed(_:)), for: .touchUpInside)
         
+    }
+    
+    
+    @objc func noButtonPressed(_ sender:UIButton){
+        ShowAlert(title: "Disclaimer", message: "Please First choose diet plan")
     }
     
     @objc func feedBackButtonPressed(_ sender:UIButton){
