@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -790,98 +791,106 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="XEw-Sx-V4C">
-                                <rect key="frame" x="62" y="178" width="250" height="375"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6im-Qp-I8c">
+                                <rect key="frame" x="42.5" y="188.5" width="290" height="290"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwi-yi-JNm">
-                                        <rect key="frame" x="0.0" y="0.0" width="250" height="60"/>
-                                        <color key="backgroundColor" red="0.38025325539999999" green="0.82778757810000003" blue="0.90239113569999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="250" id="Xc4-2v-mMn"/>
-                                            <constraint firstAttribute="height" constant="60" id="bIo-f6-Pct"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="25"/>
-                                        <state key="normal" title="Health Progress">
-                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDP-mv-41G">
-                                        <rect key="frame" x="0.0" y="105" width="250" height="60"/>
-                                        <color key="backgroundColor" red="0.38025325539999999" green="0.82778757810000003" blue="0.90239113569999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="250" id="In8-qV-ydB"/>
-                                            <constraint firstAttribute="height" constant="60" id="q9t-ez-tr4"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="25"/>
-                                        <state key="normal" title="Height/Weight">
-                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <segue destination="NZK-cK-LtS" kind="show" id="SG9-RN-t3Z"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLs-SA-nmw">
-                                        <rect key="frame" x="0.0" y="210" width="250" height="60"/>
-                                        <color key="backgroundColor" red="0.38025325539999999" green="0.82778757810000003" blue="0.90239113569999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="7Rx-pu-eVs"/>
-                                            <constraint firstAttribute="width" constant="250" id="Pb8-cW-yJB"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="25"/>
-                                        <state key="normal" title="User Feedback">
-                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <segue destination="8ZQ-7e-LES" kind="show" id="PrE-hf-2SY"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Atm-XJ-KUD">
-                                        <rect key="frame" x="0.0" y="315" width="250" height="60"/>
-                                        <color key="backgroundColor" red="0.38025325539999999" green="0.82778757810000003" blue="0.90239113569999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="YL1-rx-Tzp"/>
-                                            <constraint firstAttribute="width" constant="250" id="nFh-jV-WpO"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="25"/>
-                                        <state key="normal" title="Diet Plan">
-                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <segue destination="qoE-er-632" kind="show" id="AtZ-Wf-qtf"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Jpy-V9-K3e">
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="135"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwi-yi-JNm">
+                                                <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
+                                                <color key="backgroundColor" red="0.38025325539999999" green="0.82778757810000003" blue="0.90239113569999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="135" id="Tqe-em-pOU"/>
+                                                    <constraint firstAttribute="height" constant="135" id="pgL-Pu-oNC"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <state key="normal" title="Health Progress" image="health-40">
+                                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <real key="value" value="67.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDP-mv-41G">
+                                                <rect key="frame" x="155" y="0.0" width="135" height="135"/>
+                                                <color key="backgroundColor" red="0.38025325539999999" green="0.82778757810000003" blue="0.90239113569999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="135" id="KCZ-Nd-oEM"/>
+                                                    <constraint firstAttribute="height" constant="135" id="g4C-a4-eVj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" title="Height/Weight" image="weight">
+                                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <real key="value" value="67.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="NZK-cK-LtS" kind="show" id="SG9-RN-t3Z"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Que-dv-ECK">
+                                        <rect key="frame" x="0.0" y="155" width="290" height="135"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLs-SA-nmw">
+                                                <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
+                                                <color key="backgroundColor" red="0.38025325539999999" green="0.82778757810000003" blue="0.90239113569999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="135" id="ORg-fL-S0X"/>
+                                                    <constraint firstAttribute="width" constant="135" id="bD8-so-FlD"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" title="User Feedback" image="feedback-40">
+                                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <real key="value" value="67.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="8ZQ-7e-LES" kind="show" id="PrE-hf-2SY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Atm-XJ-KUD">
+                                                <rect key="frame" x="155" y="0.0" width="135" height="135"/>
+                                                <color key="backgroundColor" red="0.38025325539999999" green="0.82778757810000003" blue="0.90239113569999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="135" id="Fje-xe-nL3"/>
+                                                    <constraint firstAttribute="width" constant="135" id="YCE-Bd-3sR"/>
+                                                </constraints>
+                                                <state key="normal" title="Diet Plan" image="vegan-symbol-40">
+                                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <real key="value" value="67.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="qoE-er-632" kind="show" id="AtZ-Wf-qtf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.1997678876" green="0.46318954229999998" blue="0.61516803499999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="XEw-Sx-V4C" firstAttribute="top" secondItem="kvQ-ha-H3o" secondAttribute="top" constant="114" id="Mcu-t5-vre"/>
-                            <constraint firstItem="kvQ-ha-H3o" firstAttribute="trailing" secondItem="XEw-Sx-V4C" secondAttribute="trailing" constant="63" id="d40-ax-CYQ"/>
-                            <constraint firstItem="XEw-Sx-V4C" firstAttribute="leading" secondItem="kvQ-ha-H3o" secondAttribute="leading" constant="62" id="xhe-LV-TfB"/>
+                            <constraint firstItem="6im-Qp-I8c" firstAttribute="centerY" secondItem="Uyr-1h-LrJ" secondAttribute="centerY" id="Hae-iX-BwL"/>
+                            <constraint firstItem="6im-Qp-I8c" firstAttribute="centerX" secondItem="Uyr-1h-LrJ" secondAttribute="centerX" id="hQt-ld-qrW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kvQ-ha-H3o"/>
                     </view>
@@ -1599,7 +1608,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="feedback-40" width="30" height="30"/>
         <image name="firstWeekDietPlan" width="498" height="493.38156127929688"/>
+        <image name="health-40" width="30" height="30"/>
         <image name="home-24" width="18" height="18"/>
         <image name="logoIcon" width="30" height="30"/>
         <image name="progress-report" width="24" height="24"/>
@@ -1607,6 +1618,8 @@
         <image name="search" width="25.600000381469727" height="25.600000381469727"/>
         <image name="settings" width="36" height="36"/>
         <image name="v" width="152.5" height="271"/>
+        <image name="vegan-symbol-40" width="30" height="30"/>
+        <image name="weight" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="q5a-tr-C1e"/>
