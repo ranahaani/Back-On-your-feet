@@ -56,6 +56,10 @@ extension CurrentAilmentViewController : UITableViewDelegate,UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = dataArray[indexPath.row]
+        tableView.layer.cornerRadius = 10.0
+        tableView.layer.masksToBounds = true
+        tableView.separatorColor = #colorLiteral(red: 0.2016202807, green: 0.463247776, blue: 0.6151759624, alpha: 1)
+        cell.textLabel?.textAlignment = .center
         if selectedData.contains(dataArray[indexPath.row]) {
             cell.accessoryType = .checkmark
         }else{
