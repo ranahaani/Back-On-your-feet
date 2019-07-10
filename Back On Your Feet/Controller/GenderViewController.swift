@@ -62,6 +62,10 @@ extension GenderViewController : UITableViewDelegate,UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = dataArray[indexPath.row]
         cell.textLabel?.textAlignment = .center
+        cell.textLabel?.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        cell.selectionStyle = .none
+        cell.backgroundColor = #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)
+        cell.textLabel?.font = UIFont(name: "Avenir", size: 24)
         tableView.layer.cornerRadius = 10.0
         tableView.layer.masksToBounds = true
         tableView.separatorColor = #colorLiteral(red: 0.2016202807, green: 0.463247776, blue: 0.6151759624, alpha: 1)
@@ -73,7 +77,9 @@ extension GenderViewController : UITableViewDelegate,UITableViewDataSource {
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if selectedData.contains(dataArray[indexPath.row]) {

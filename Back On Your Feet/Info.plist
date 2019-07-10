@@ -22,6 +22,10 @@
 	<true/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
+	<key>NSHealthClinicalHealthRecordsShareUsageDescription</key>
+	<string>We need your health records</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>Please allow to share </string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
