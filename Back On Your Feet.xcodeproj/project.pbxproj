@@ -30,6 +30,8 @@
 		EA3286FB22BF78830044B7C1 /* HeightWidthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3286FA22BF78830044B7C1 /* HeightWidthViewController.swift */; };
 		EA3286FD22BF7C470044B7C1 /* HeightWidthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3286FC22BF7C470044B7C1 /* HeightWidthTableViewCell.swift */; };
 		EA465A5A22D60C74007F2E48 /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA465A5922D60C74007F2E48 /* HealthViewController.swift */; };
+		EA465A6022D61CAB007F2E48 /* fileAboutLoss.json in Resources */ = {isa = PBXBuildFile; fileRef = EA465A5F22D61CAB007F2E48 /* fileAboutLoss.json */; };
+		EA465A6222D62668007F2E48 /* DietPlanDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA465A6122D62668007F2E48 /* DietPlanDetailsViewController.swift */; };
 		EA63DBFD22D24EC500A3882C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA63DBFC22D24EC500A3882C /* HealthKit.framework */; };
 		EAC21D0B22BA7EEF00E7A7AE /* CurrentAilmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC21D0A22BA7EEF00E7A7AE /* CurrentAilmentViewController.swift */; };
 		EAC21D0D22BB444D00E7A7AE /* PhysicalyActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC21D0C22BB444D00E7A7AE /* PhysicalyActivityViewController.swift */; };
@@ -70,6 +72,9 @@
 		EA465A5B22D60E6F007F2E48 /* DiabeticWeightLoss.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DiabeticWeightLoss.json; sourceTree = "<group>"; };
 		EA465A5C22D60F27007F2E48 /* bonesDietPlan.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bonesDietPlan.json; sourceTree = "<group>"; };
 		EA465A5D22D61114007F2E48 /* heartPatientWeightLoss.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = heartPatientWeightLoss.json; sourceTree = "<group>"; };
+		EA465A5E22D619C4007F2E48 /* heartPatientWeightLoss1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = heartPatientWeightLoss1.json; sourceTree = "<group>"; };
+		EA465A5F22D61CAB007F2E48 /* fileAboutLoss.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fileAboutLoss.json; sourceTree = "<group>"; };
+		EA465A6122D62668007F2E48 /* DietPlanDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietPlanDetailsViewController.swift; sourceTree = "<group>"; };
 		EA63DBFB22D24EC500A3882C /* Back On Your Feet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Back On Your Feet.entitlements"; sourceTree = "<group>"; };
 		EA63DBFC22D24EC500A3882C /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		EAC21D0A22BA7EEF00E7A7AE /* CurrentAilmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentAilmentViewController.swift; sourceTree = "<group>"; };
@@ -133,7 +138,9 @@
 			children = (
 				EA465A5B22D60E6F007F2E48 /* DiabeticWeightLoss.json */,
 				EA465A5C22D60F27007F2E48 /* bonesDietPlan.json */,
+				EA465A5F22D61CAB007F2E48 /* fileAboutLoss.json */,
 				EA465A5D22D61114007F2E48 /* heartPatientWeightLoss.json */,
+				EA465A5E22D619C4007F2E48 /* heartPatientWeightLoss1.json */,
 				EA3286F722BF57AB0044B7C1 /* infoAboutHeight.json */,
 				35AC1B732277443400F0C837 /* Search.swift */,
 			);
@@ -153,6 +160,7 @@
 				35EADBF1227D563B0004B3AF /* JoggingViewController.swift */,
 				35AC1B6B2277390B00F0C837 /* LoginViewController.swift */,
 				EACB0B4E22D1BFFB00D1C8C6 /* DailyDietPlanViewController.swift */,
+				EA465A6122D62668007F2E48 /* DietPlanDetailsViewController.swift */,
 				EAE3D0CC22C0911E00E6E26C /* WeekDietplanCollectionViewController.swift */,
 				35AC1B6D2277391800F0C837 /* SignupViewController.swift */,
 				35EADBEF227D4A180004B3AF /* ProgressViewController.swift */,
@@ -270,6 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA465A6022D61CAB007F2E48 /* fileAboutLoss.json in Resources */,
 				355DEDDE225F4CFF002F44EE /* LaunchScreen.storyboard in Resources */,
 				35AC1B6A2277383700F0C837 /* GoogleService-Info.plist in Resources */,
 				355DEDDB225F4CFF002F44EE /* Assets.xcassets in Resources */,
@@ -364,6 +373,7 @@
 				EACB0B4F22D1BFFB00D1C8C6 /* DailyDietPlanViewController.swift in Sources */,
 				35AC1B7022773BAE00F0C837 /* SearchViewController.swift in Sources */,
 				35EADBF2227D563B0004B3AF /* JoggingViewController.swift in Sources */,
+				EA465A6222D62668007F2E48 /* DietPlanDetailsViewController.swift in Sources */,
 				EA465A5A22D60C74007F2E48 /* HealthViewController.swift in Sources */,
 				EA3286FB22BF78830044B7C1 /* HeightWidthViewController.swift in Sources */,
 				355DEDD4225F4CFD002F44EE /* AppDelegate.swift in Sources */,
