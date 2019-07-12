@@ -1,0 +1,151 @@
+{
+    "DAY1": {
+	"Breakfast": "half a grapefruit, one slice of toast, 2 tablespoons (tbsp) of peanut butter, ideally a salt-free and sugar-free brand, 1 cup of caffeinated coffee or tea",
+	"Lunch": "half a cup of tuna, one slice of toast, 1 cup of caffeinated coffee or tea",
+	"Snacks": " Drink water a half hour before Dinner",
+	"Dinner": "3 ounces of any meat, 1 cup of green beans, half a banana, one small apple, 1 cup of vanilla ice cream",
+	"Total Calories": "1400"
+	},
+	"DAY2": {
+		"Breakfast": "one egg, one slice of toast, half a banana",
+		"Lunch": "one hard-boiled egg, 1 cup of cottage cheese, five saltine crackers",
+		"Snacks": "Pear, Popcorn – air-popped or fat-free microwave ",
+		"Dinner": "two hot dogs without the buns, 1 cup of broccoli, half a cup of carrots, half a banana, half a cup of vanilla ice cream",
+		"Total Calories": "1300"
+	},
+	"DAY3": {
+		"Breakfast": "five saltine crackers, one slice of cheddar cheese, one small apple",
+		"Lunch": "one hard-boiled egg, one slice of toast",
+		"Snacks": "Pear, Popcorn – air-popped or fat-free microwave",
+		"Dinner": "1 cup of tuna, half a banana, 1 cup of vanilla ice cream",
+		"Total Calories": "1250"
+	},
+	"DAY4": {
+		"Breakfast": "Quarter a grapefruit, half slice of toast, 1 tbsp peanut butter, 1 cup of caffeinated coffee or tea",
+		"Lunch": "half an avocado, 1 tbsp hummus, one slice of whole-wheat toast, 1 cup of caffeinated coffee or tea",
+		"Snacks": "Cottage Cheese and Fruit(½ cup 1% no-salt-added cottage cheese with ½ cup to 1 cup fresh diced fruit, or use pop-top canned fruits packed in juice or water, no sugar added.)",
+		"Dinner": "tofu (up to 300 calories), 1 cup of green beans, one small apple, 1 cup of vanilla ice cream (vegans can use dairy-free ice cream)",
+		"Total Calories": "1200"
+	},
+	"DAY5": {
+		"Breakfast": "half a cup of baked beans, one slice of whole-wheat toast, half a banana",
+		"Lunch": "1 cup of unsweetened soy,hemp,or almond milk, half an avocado, 2 tbsp hummus, five saltine crackers",
+		"Snacks": "1 to 2 Cups of Veggie-Rich, Bean-Rich Low-Sodium Soup, such as.. Red Bean and Leftover Veggie Soup",
+		"Dinner": "two veggie hot dogs without the buns, 1 cup of broccoli, half a cup of carrots, half a banana, half a cup of vanilla ice cream (can be dairy-free)",
+		"Total Calories": "1150"
+	},
+	"DAY6": {
+		"Breakfast": "one slice of cheddar cheese (for vegans, about 15–20 almonds), five saltine crackers or half a cup of couscous or quinoa, one small apple",
+		"Lunch": "half an avocado, 1 tbsp hummus, one slice of whole-wheat bread",
+		"Snacks": "Sweet Potato(Enjoy the rich flavor of sweet potatoes) While home on Sundays, cook up a batch)",
+		"Dinner": "two veggie hot dogs without the buns, 1 cup of broccoli, half a cup of carrots, half a banana, half a cup of vanilla ice cream (can be dairy-free)",
+		"Total Calories": "1100"
+	},
+	"DAY7": {
+		"Breakfast": "one slice of cheddar cheese (for vegans, about 10–15 almonds), five saltine crackers or half a cup of couscous, one small apple",
+		"Lunch": "half an avocado, 1 tbsp hummus, half slice of whole-wheat bread",
+		"Snacks": "Carrots and Hummus, Open up a big bag of baby carrots and dip them into your freshly made no-oil-added, no-salt-added hummus.",
+		"Dinner": "two veggie hot dogs without the buns, half cup of broccoli, half a cup of carrots, half a banana, half a cup of vanilla ice cream (can be dairy-free)",
+		"Total Calories": "1090"
+	},
+	"DAY8": {
+		"Breakfast": "half a cup of baked beans, one slice of whole-wheat toast, half a banana",
+		"Lunch": "1 cup of unsweetened soy,hemp,or almond milk, half an avocado, 1 tbsp hummus, three saltine crackers",
+		"Snacks": "(Mid-Afternoon Snack (enjoy only if hungry)) 1 to 2 Cups of Fresh Fruit, Take advantage of grocery store salad bars and pick up containers of pre-cut fresh fruit like melon.",
+		"Dinner": "two veggie hot dogs without the buns, 1 cup of broccoli, half a cup of carrots, half a banana, quarter a cup of vanilla ice cream (can be dairy-free)",
+		"Total Calories": "1080"
+	},
+	"DAY9": {
+		"Breakfast": "five saltine crackers, half slice of cheddar cheese, one small apple",
+		"Lunch": "one hard-boiled egg, one slice of toast",
+		"Snacks": "Sweet Potato(Enjoy the rich flavor of sweet potatoes)",
+		"Dinner": "1/2 cup of tuna, half a banana, 1 cup of vanilla ice cream",
+		"Total Calories ": "1060 "
+	},
+	"DAY10": {
+
+		"Breakfast": "half slice of toast, 1 tbsp peanut butter, 1 cup of caffeinated coffee or tea",
+		"Lunch": "half an avocado, 1 tbsp hummus, 1/2 slice of whole-wheat toast, 1 cup of caffeinated coffee or tea",
+		"Snacks": "1 to 2 Cups of Fresh Fruit Speciall Apple/Fresh Oranges",
+		"Dinner": "tofu (up to 300 calories), 1 cup of green beans, one small apple",
+		"Total Calories": "1050"
+	},
+	"DAY11": {
+		"Breakfast": "half a cup of baked b Speciall Apple/Fresh Orangeseans, 1/2 slice of whole-wheat toast, half a banana",
+		"Lunch": "1 cup of unsweetened soy,hemp,or almond milk, half an avocado, 1 tbsp hummus, 2 saltine crackers",
+		"Snacks": "1 banana + 28gm nuts",
+		"Dinner": "two veggie hot dogs without the buns, 1 cup of broccoli, half a cup of carrots, half a banana, half a cup of vanilla ice cream (can be dairy-free)",
+		"Total Calories": "1040"
+	},
+
+	"DAY12": {
+		"Breakfast": "Eat a piece of fruit with breakfast, A whole orange contains about 60 calories, while one cup of orange juice contains as many as 120 calories, Use skim milk in your coffee or tea instead of cream, half-and-half or full-fat milk, and skip the sugar, honey and syrups, Drink skim milk instead 1 percent milk. If you like soy milk, drink the plain or light variety instead of chocolate",
+		"Lunch": "Use 3 turkey slices on your sandwich instead of 6; it's closer to one meat serving. Drink water or diet Soda, Use whole wheat bread or wrap on your sandwich instead of buns. You can also make an open-faced sandwich, using one slice of bread instead of two",
+		"Snacks": " 1 cup baby carrots & sugar snap peas ",
+		"Dinner": "When cooking, measure out one to two tablespoons of oil instead of just pouring into the pot or pan. Trim visible fat from meat; remove the skin from poultry; and don’t batter your poultry or fish, Instead of frying your foods, try steaming, broiling and baking, a pudding cup made with skim milk, instead of cake or cookies",
+		"Total Calories": "1040"
+	},
+	"DAY13": {
+		"Breakfast": "Have 3 egg whites with one yolk instead of two whole eggs, Have one slice of low-fat cheese on your toast instead of full-fat cheese, and skip the butter",
+		"Lunch": "Use tuna canned in water, instead of oil (the smallest size can). Replace the mayonnaise, tartar sauce, sour cream, ranch dressing or guacamole in sandwiches with mustard or salsa",
+		"Snacks": "1 apple + 20g nuts",
+		"Dinner": "Cut back on rice and pasta. Have one cup of cooked pasta or rice (with no dinner rolls), and add more vegetables to your dish.",
+		"Total Calories": "1030"
+	},
+	"DAY14": {
+		"Breakfast": "Have 2 egg whites with one yolk instead of two whole eggs, Have one slice of low-fat cheese on your toast instead of full-fat cheese, and skip the butter",
+		"Lunch": "Use tuna canned in water, instead of oil (the smallest size can). half tartar sauce, sour cream, ranch dressing or guacamole in sandwiches with mustard or salsa",
+		"Snacks": "2 tablespoons hummus",
+		"Dinner": "Cut back on rice and pasta. Have one cup of cooked pasta or rice (with no dinner rolls), and add more vegetables to your dish.",
+		"Total Calories": "1030"
+	},
+	"DAY15": {
+		"Breakfast": "Have 2 egg whites instead of two whole eggs, Have one slice of low-fat cheese on your toast instead of full-fat cheese, and skip the butter",
+		"Lunch": "Skip the chips and cookies and have a green salad with light nonfat dressing (such as a vinaigrette) or a light soup, Use whole wheat bread or wrap on your sandwich instead of buns. using one slice of bread instead of two for sandwich",
+		"Snacks": "1 cup blueberries + 26g nuts",
+		"Dinner": "Cut back on rice and pasta. Have one cup of cooked pasta or rice (with no dinner rolls), and add more vegetables to your dish.",
+		"Total Calories": "1030"
+	},
+	"DAY16": {
+		"Breakfast": "Drink skim milk instead of whole, 2 percent or 1 percent milk, Have 2 egg whites instead of two whole eggs, Have one slice of low-fat cheese on your toast instead of full-fat cheese, and skip the butter",
+		"Lunch": "Use whole wheat bread or wrap on your sandwich instead of bun, Skip the chips and cookies and have a green salad with light nonfat dressing (such as a vinaigrette) or a light soup,  using one slice of bread instead of two for sandwich",
+		"Snacks": "1 cup broccoli & cauliflower",
+		"Dinner": "Instead of frying your foods, try steaming, broiling and baking, and add more vegetables to your dish",
+		"Total Calories": "1040"
+	},
+	"DAY17": {
+		"Breakfast": "Eat a piece of fruit with breakfast, A whole orange contains about 60 calories, while one cup of orange juice contains as many as 120 calories, Use skim milk in your coffee or tea instead of cream, half-and-half or full-fat milk, and skip the sugar, honey and syrups, Drink skim milk instead 1 percent milk. If you like soy milk, drink the plain or light variety instead of chocolate",
+		"Lunch": "Use 3 turkey slices on your sandwich instead of 6; it's closer to one meat serving. Drink water or diet Soda, Use whole wheat bread or wrap on your sandwich instead of buns. You can also make an open-faced sandwich, using one slice of bread instead of two",
+		"Snacks": "1 apple + 26g nuts",
+		"Dinner": "When cooking, measure out one to two tablespoons of oil instead of just pouring into the pot or pan. Trim visible fat from meat; remove the skin from poultry; and don’t batter your poultry or fish, Instead of frying your foods, try steaming, broiling and baking, a pudding cup made with skim milk, instead of cake or cookies",
+		"Total Calories": "1050"
+	},
+	"DAY18": {
+		"Breakfast": "Use skim milk in your coffee or tea instead of cream, half-and-half or full-fat milk, and skip the sugar, honey and syrups.",
+		"Lunch": "When cooking, measure out one to two tablespoons of oil instead of just pouring into the pot, Use 4 turkey slices on your sandwich instead of 6; it's closer to one meat serving. Drink water or diet soda instead of regular soda.",
+		"Snacks": "1 cup baby carrots & sugar snap peas",
+		"Dinner": "When cooking,, Instead of frying your foods, try steaming, broiling and baking, a pudding cup made with skim milk, instead of cake or cookies",
+		"Total Calories": "1060"
+	},
+	"DAY19": {
+		"Breakfast": "2 large eggs 2 slices whole grain bread 1 Tbsp.olive oil spread, skip the sugar, honey and syrups",
+		"Lunch": "1 cup of stawberries, 2 slices whole grain bread 300 gram tuna(baam fish) 1 slice low - fat mozzarella cheese 1 Tbsp.olive oil mayo",
+		"Snacks": "1 cup baby carrots & sugar snap peas",
+		"Dinner": "400 grams grilled chicken 1 medium baked potato, 1 - 1 / 2 cups green beans(peas)",
+		"Total Calories": "1060"
+	},
+	"DAY20": {
+		"Breakfast": "2 large eggs 2 slices whole grain bread 1 Tbsp.olive oil spread.",
+		"Lunch": " 1 medium kiwi, 2 slices whole grain bread 300 gram tuna(baam fish) 1 slice low - fat mozzarella cheese 1 Tbsp.olive oil mayo.",
+		"Snacks": "1 to 2 Cups of Fresh Fruit Especially Oranges",
+		"Dinner": "400 grams.grilled chicken 1 medium baked potato 1 - 1 / 2 cups green beans(peas)",
+		"Total Calories": "1030"
+	},
+	"DAY21": {
+		"Breakfast": "1 cup nonfat plain yogurt• 1 / 2 cup blueberries / cherries• 1 1 / 2 Tbsp.slivered almonds• 2 tsp.honeyTop yogurt with blueberries almonds and honey.",
+		"Lunch": " 1 1 / 2 cups Roasted veggie Noodle Salad ",
+		"Snacks": "1 cup broccoli & cauliflower",
+		"Dinner": " 1 serving Grilled fish with pinch of salt• 1 serving Paprika - Herb Rubbed Chicken",
+		"Total Calories": "1010"
+	}
+}
