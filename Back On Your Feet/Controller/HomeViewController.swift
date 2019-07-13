@@ -15,34 +15,43 @@ class HomeViewController: UIViewController {
    // @IBOutlet weak var startPushups: UIButton!
     //@IBOutlet weak var weightLoss: UIButton!
     //@IBOutlet weak var weightGain: UIButton!
-    let db = Firestore.firestore()
-    var ref: DocumentReference? = nil
+    let bgImage:UIImageView={
+       let image = UIImageView()
+        image.image = UIImage(named: "bgImage")
+        image.alpha = 0.5
+        image.translatesAutoresizingMaskIntoConstraints = false
+        return image
+    }()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        let uid = Auth.auth().currentUser?.uid
-        let docRef = db.collection("profileInfo").document(uid!)
-        SVProgressHUD.show(withStatus: "Loading...")
-        
-        docRef.getDocument { (document, error) in
-            if let document = document, document.exists {
-                let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
-                print("Document data: \(dataDescription)")
-                SVProgressHUD.dismiss()
-                if dataDescription.contains("weight loss") {
-                    
-                }
-                else if dataDescription.contains("weight gain") {
-                    
-                }
-            } else {
-                SVProgressHUD.dismiss()
-                SVProgressHUD.showError(withStatus: "Document does not exist")
-              
-                print("Document does not exist")
-            }
-        }
+       view.addSubview(bgImage)
+        bgImage.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        bgImage.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        bgImage.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        bgImage.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        view.sendSubviewToBack(bgImage)
+//        let uid = Auth.auth().currentUser?.uid
+//        let docRef = db.collection("profileInfo").document(uid!)
+//        SVProgressHUD.show(withStatus: "Loading...")
+//
+//        docRef.getDocument { (document, error) in
+//            if let document = document, document.exists {
+//                let dataDescription = document.data()
+//                self.currentAilment = dataDescription?["currentAilment"] as! String
+//                print(self.currentAilment)
+//                SVProgressHUD.dismiss()
+//
+//
+//
+//            } else {
+//                SVProgressHUD.dismiss()
+//                SVProgressHUD.showError(withStatus: "Document does not exist")
+//
+//                print("Document does not exist")
+//            }
+//        }
         
 
         

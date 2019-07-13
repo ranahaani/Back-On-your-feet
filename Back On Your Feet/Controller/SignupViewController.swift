@@ -32,21 +32,21 @@ class SignupViewController: UIViewController {
     
     @IBAction func SignupAction(_ sender: Any) {
         SVProgressHUD.show(withStatus: "Creating....")
-//        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!){ (user, error) in
-//            if error == nil {
-//                SVProgressHUD.dismiss()
+        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!){ (user, error) in
+            if error == nil {
+                SVProgressHUD.dismiss()
 self.performSegue(withIdentifier: "signupToMain", sender: self)
-//            }
-//            else{
-//                SVProgressHUD.dismiss()
-//
-//                let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
-//                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-//
-//                alertController.addAction(defaultAction)
-//                self.present(alertController, animated: true, completion: nil)
-//            }
-//        }
+            }
+            else{
+                SVProgressHUD.dismiss()
+
+                let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+
+                alertController.addAction(defaultAction)
+                self.present(alertController, animated: true, completion: nil)
+            }
+        }
    }
 }
 

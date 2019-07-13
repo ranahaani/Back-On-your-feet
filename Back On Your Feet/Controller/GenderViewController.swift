@@ -31,12 +31,14 @@ class GenderViewController: UIViewController {
     
     @IBAction func SaveButtonPressed(_ sender: Any) {
         if selectedData.isEmpty{
+            print("popppppp")
             ShowAlert(title: "Error", message: "Please select an option")
         }
         else{
             
             self.navigationController?.popViewController(animated: true)
-            
+            self.dismiss(animated: true, completion: nil)
+            print("Pop")
             // presentingViewController?.dismiss(animated: false, completion: nil)
         }
         

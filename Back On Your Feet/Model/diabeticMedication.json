@@ -1,0 +1,32 @@
+
+{
+    "Sugar Level": "Diabetic level1 (126-200mg/dL)",
+    "Short-acting insulin": "Regular insulin (Humulin and Novolin), 1 Dose",
+    "Meal instruction": "Eat a meal within 5 to 10 minutes after taking it.",
+    "Rapid-acting insulins": " Insulin aspart (NovoLog, FlexPen, Fiasp)",
+    "Intermediate-acting insulin": "After dinner or Lunch,take isophine(Humulin N, Novolin N), 1 Dose"
+    "Sugar Level": " Diabetic level2:(200-600mg/dL)",
+    
+    "Meal instructions": "Eat a meal within 5 to 10 minutes after taking it.",
+    "Intermediate-acting insulin": "After dinner or lunch, insulin isophane (Humulin N, Novolin N),1 Dose",
+    "Long-acting Insulins": "After dinner or Lunch take Insulin degludec(Tresiba), Insulin Detemir(Levemin), 1Dose(100 ml)"
+    "Imp Note:": "These are all the medicine to be taken in state of emergency but it is always better to first consult a doctor or physician",
+    
+    "Diabetic level1": {
+        "Sugar Level": "(126-200mg/dL)",
+        "Short-acting insulin": "Regular insulin (Humulin and Novolin), 1 Dose",
+        "Meal instruction": "Eat a meal within 5 to 10 minutes after taking it.",
+        "Rapid-acting insulins": " Insulin aspart (NovoLog, FlexPen, Fiasp)",
+        "Intermediate-acting insulin": "After dinner or Lunch,take isophine(Humulin N, Novolin N), 1 Dose"
+    },
+    "Diabetic level2": {
+        "Sugar Level": "(200-600mg/dL)",
+        "Meal instructions": "Eat a meal within 5 to 10 minutes after taking it.",
+        "Intermediate-acting insulin": "After dinner or lunch, insulin isophane (Humulin N, Novolin N),1 Dose",
+        "Long-acting Insulins": "After dinner or Lunch take Insulin degludec(Tresiba), Insulin Detemir(Levemin), 1Dose(100 ml)"
+    },
+    
+    "What to eat": {
+        "Products": "Vegetables and Fruit, Grain Products, Milk and Alternatives, Meat and Alternatives"
+    }
+}

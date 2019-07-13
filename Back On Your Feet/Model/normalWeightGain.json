@@ -1,0 +1,135 @@
+
+{
+    "DAY1": {
+        "Breakfast": "8 oz. orange juice fortified with calcium and vitamin D, 1 cup whole grain cereal fortified with vitamin D, 4 oz.skim milk",
+        
+        "Lunch": "2.5 oz. extra-lean ground beef on a whole grain bun (may add 1 slice nonfat American cheese, 1 lettuce leaf, and 2 red tomato slices), green salad with 1 hard-boiled egg and 2 tbsp. low-calorie dressing, 8 oz. skim milk",
+        "Snacks": "1 orange",
+        "Dinner": "2.5 oz. chicken breast, 1/2 cup broccoli, 3/4 cup rice, 2 slices French bread with 1 tsp. margarine, 1 cup strawberries with 2 tbsp. lite whipped topping"
+    },
+    "DAY2": {
+        "Breakfast": "1 slice whole grain toast with peanut butter, avocado, or fruit jam, 8 oz. calcium-fortified orange juice or 4 oz. skim milk",
+        "Lunch": "vegetarian chili, green salad with 1 hard-boiled egg and 2 tbsp. low-calorie dressing, small serving sorbet with raspberries",
+        "Snacks": "low- or nonfat yogurt with sliced fruit or berries",
+        "Dinner": "pasta primavera with whole grain pasta, grilled chicken, yellow squash, zucchini, carrots, and cherry tomatoes, dressed in olive oil, cucumber, avocado, and tomato salad, small serving lemon sorbet garnished with berry sauce"
+    },
+    "DAY3": {
+        "Breakfast": "slow-cooked oatmeal prepared with apples and/or raisins, 8 oz. calcium-fortified orange juice",
+        "Lunch": "falafel pita sandwich (may add cucumber, lettuce, and tomato), 1 slice watermelon",
+        "Snacks": "1 apple, banana, or orange, or 1 serving strawberries",
+        "Dinner": "fajita burrito with chicken or lean steak, bell peppers, onions, and quinoa on a whole grain tortilla, mashed sweet potato, corn"
+    },
+    "DAY4": {
+        "Breakfast": "scrambled tofu with vegetables, such as bell peppers, sugar snap peas, and spinach, oven-roasted breakfast potatoes (may sprinkle with skim-milk American shredded cheese)",
+        "Lunch": "whole wheat wrap with red pepper hummus, grated carrots, and tomato (may also try black or white bean spreads), 1 apple or banana",
+        "Snacks": "fruit smoothie blended with low-fat yogurt or skim milk",
+        "Dinner": "grilled chicken sauteed with zucchini, asparagus, and mushrooms, corn on the cob"
+    },
+    "DAY5": {
+        "Breakfast": "whole grain cereal with sliced strawberries, 4 oz. soy milk, 1 small banana",
+        "Lunch": "Thai soup with noodles, spinach, mushrooms, and corn, carrot and bean dip, with celery and/or carrots for dipping, green salad with tomatoes and basil",
+        "Snacks": "chickpea or white bean dip, 1 toasted whole grain pita, sliced into fours for dipping",
+        "Dinner": "whole grain spaghetti with vegetables, such as chopped onions, grated carrots, and diced broccoli, small serving sorbet with berry sauce or fruits"
+    },
+    "DAY6": {
+        "Breakfast": "whole grain pancakes topped with applesauce or fruit spread, 1 small veggie sausage link, 4 oz. milk or calcium-fortified orange juice",
+        "Lunch": "vegetable and/or bean-based soup, black bean and corn salad with red peppers, 1 apple, banana, or orange",
+        "Snacks": "4 cubes of low-fat cheese, whole grain crackers or crisps ",
+        "Dinner": "whole wheat spinach lasagna with low-fat cheese, green salad, with vegetables of your choice"
+    },
+    "DAY7": {
+        "Breakfast": "omelet or quiche with tomato, spinach, and other desired vegetables,8 oz. calcium-fortified juice or skim milk",
+        "Lunch": "4- to 6-oz. salmon burger on a whole grain bun, mashed potatoes",
+        "Snacks": "rice pudding or milk pudding prepared with low-fat milk, 1 handful of unsalted almonds",
+        "Dinner": "nachos topped with kidney beans, avocado, and low-fat cheese, Greek salad with feta cheese"
+        
+    },
+    "DAY8": {
+        "Breakfast": "whole grain cereal with sliced strawberries, 5 oz. soy milk, 1 small banana",
+        "Lunch": "Thai soup with noodles, spinach, mushrooms, and corn, carrot and bean dip, with celery and/or carrots for dipping, green salad with tomatoes and basil",
+        "Snacks": "chickpea or white bean dip, 1 toasted whole grain pita, sliced into fours for dipping",
+        "Dinner": "whole grain spaghetti with vegetables, such as chopped onions, grated carrots, and diced broccoli, small serving sorbet with berry sauce or fruits"
+    },
+    "DAY9": {
+        "Breakfast": "scrambled tofu with vegetables, such as bell peppers, sugar snap peas, and spinach, oven-roasted breakfast potatoes (may sprinkle with skim-milk American shredded cheese)",
+        "Lunch": "whole wheat wrap with red pepper hummus, grated carrots, and tomato (may also try black or white bean spreads), 1 apple or banana",
+        "Snack": "fruit smoothie blended with low-fat yogurt or skim milk",
+        "Dinner": "grilled chicken sauteed with zucchini, asparagus, and mushrooms, corn on the cob"
+    },
+    "DAY10": {
+        "Breakfast": "slow-cooked oatmeal prepared with apples and/or raisins, 9 oz. calcium-fortified orange juice",
+        "Lunch": "falafel pita sandwich (may add cucumber, lettuce, and tomato), 1 slice watermelon",
+        "Snacks": "1 apple, banana, or orange, or 1 serving strawberries",
+        "Dinner": "fajita burrito with chicken or lean steak, bell peppers, onions, and quinoa on a whole grain tortilla, mashed sweet potato, corn"
+    },
+    "DAY11": {
+        "Breakfast": ", 10 oz. calcium-fortified orange juice or shake",
+        "Lunch": "falafel pita sandwich (may add cucumber, lettuce, and tomato), 1.5 slice watermelon",
+        "Snacks": "1 apple, banana, or orange, or 1 serving strawberries, 1 yougurt plate",
+        "Dinner": "fajita burrito with chicken or lean steak, bell peppers, onions, and quinoa on a whole grain tortilla, mashed sweet potato, corn"
+    },
+    "DAY12": {
+        "Breakfast": "scrambled tofu with vegetables, such as bell peppers, sugar snap peas, and spinach, slow-cooked oatmeal prepared with apples and/or raisins or mustard, 10 oz. calcium-fortified orange juice or shake",
+        "Lunch": "whole wheat wrap with red pepper hummus, falafel pita sandwich (may add cucumber, lettuce, and tomato), 1.5 slice watermelon",
+        "Snacks": "1 apple, banana, or orange, or 1 serving strawberries",
+        "Dinner": "whole grain spaghetti with vegetables, bell peppers, onions, and quinoa on a whole grain tortilla, mashed sweet potato, corn"
+    },
+    "DAY13": {
+        "Breakfast": "omelet or quiche with tomato, spinach, and other desired vegetables,8 oz. calcium-fortified juice or skim milk",
+        "Lunch": "4- to 8-oz. salmon burger on a whole grain bun, mashed potatoes",
+        "Snacks": "rice pudding or milk pudding prepared with low-fat milk, 1 handful of unsalted almonds",
+        "Dinner": "nachos topped with kidney beans, avocado, and low-fat cheese, Greek salad with feta cheese"
+        
+    },
+    "DAY14": {
+        "Breakfast": "omelet or quiche with tomato, spinach, and other desired vegetables,10 oz. calcium-fortified juice or skim milk",
+        "Lunch": "4- to 10-oz. salmon burger on a whole grain bun, mashed potatoes",
+        "Snacks": "rice pudding or milk pudding prepared with low-fat milk, 2 handful of unsalted almonds",
+        "Dinner": "nachos topped with kidney beans, avocado, and low-fat cheese, Greek salad with feta cheese"
+        
+    },
+    "DAY15": {
+        "Breakfast": "whole grain pancakes topped with applesauce or fruit spread, 2 small veggie sausage link, 4 oz. milk or calcium-fortified orange juice",
+        "Lunch": "vegetable and/or bean-based soup, black bean and corn salad with red peppers, 1 apple, banana, or orange",
+        "Snacks": "5 cubes of low-fat cheese, whole grain crackers or crisps ",
+        "Dinner": "whole wheat spinach lasagna with low-fat cheese, green salad, with vegetables of your choice"
+    },
+    "DAY16": {
+        "Breakfast": "whole grain pancakes topped with applesauce or fruit spread or fruit cocktail, 2 small veggie sausage link, 5 oz. milk or calcium-fortified orange juice",
+        "Lunch": "vegetable and/or bean-based soup, black bean and corn salad with red peppers, 1 apple, banana, or orange",
+        "Snacks": "4 cubes of low-fat cheese, whole grain crackers or crisps ",
+        "Dinner": "whole wheat spinach lasagna with low-fat cheese, green salad, with vegetables of your choice"
+    },
+    "DAY17": {
+        "Breakfast": "scrambled tofu with vegetables, such as bell peppers, sugar snap peas, and spinach, oven-roasted breakfast potatoes (may sprinkle with skim-milk American shredded cheese)",
+        "Lunch": "whole wheat wrap with red pepper hummus, grated carrots, and tomato (may also try black or white bean spreads), 1 apple or banana",
+        "Snacks": "2 fruit smoothie blended with low-fat yogurt or skim milk",
+        "Dinner": "grilled chicken sauteed with zucchini, asparagus, and mushrooms, corn on the cob"
+    },
+    "DAY18": {
+        "Breakfast": "2 slice whole grain toast with peanut butter, avocado, or fruit jam, 8 oz. calcium-fortified orange juice or 4 oz. skim milk",
+        "Lunch": "vegetarian chili, green salad with 1 hard-boiled egg and 2 tbsp. low-calorie dressing, small serving sorbet with raspberries",
+        "Snacks": "low- or nonfat yogurt with sliced fruit or berries",
+        "Dinner": "pasta primavera with whole grain pasta, grilled chicken, yellow squash, zucchini, carrots, and cherry tomatoes, dressed in olive oil, cucumber, avocado, and tomato salad, small serving lemon sorbet garnished with berry sauce"
+    },
+    "DAY19": {
+        "Breakfast": "2 slice whole grain toast with peanut butter, avocado, or fruit jam, 8 oz. calcium-fortified orange juice or 4 oz. skim milk",
+        "Lunch": "vegetarian chili, green salad with 2 hard-boiled egg and 2 tbsp. low-calorie dressing, small serving sorbet with raspberries",
+        "Snacks": "low- or nonfat yogurt with sliced fruit or berries",
+        "Dinner": "pasta primavera with whole grain pasta, grilled chicken, yellow squash, zucchini, carrots, and cherry tomatoes, dressed in olive oil, cucumber, avocado, and tomato salad, small serving lemon sorbet garnished with berry sauce"
+    },
+    "DAY20": {
+        "Breakfast": "omelet or quiche with tomato, spinach, and other desired vegetables,9 oz. calcium-fortified juice or skim milk",
+        "Lunch": "4- to 6-oz. salmon burger on a whole grain bun, mashed potatoes",
+        "Snacks": "rice pudding or milk pudding prepared with low-fat milk, 1 handful of unsalted almonds",
+        "Dinner": "nachos topped with kidney beans, avocado, and low-fat cheese, Greek salad with feta cheese"
+        
+    },
+    "DAY21": {
+        "Breakfast": "omelet or quiche with tomato, spinach, and other desired vegetables,9 oz. calcium-fortified juice or skim milk",
+        "Lunch": "4- to 6-oz. salmon burger on a whole grain bun, mashed potatoes",
+        "Snacks": "rice pudding or milk pudding prepared with low-fat milk, 1 handful of unsalted almonds",
+        "Dinner": "nachos topped with kidney beans, avocado, and low-fat cheese, Greek salad with feta cheese"
+        
+    },
+}

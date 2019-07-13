@@ -7,27 +7,153 @@
 //
 
 import UIKit
-
+import SVProgressHUD
 class DailyDietPlanViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
    var selectedWeight = ""
     var selectedIndex = 0
+    var selectedCurrentAIlment = ""
     var dietPlans:Dictionary<String, AnyObject>?
+    var dataArray = ["Bone/Joints","Heart Diesease","Diabetes","None"]
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         if selectedWeight == "Weight Gain"{
-            if let path = Bundle.main.path(forResource: "HeartPatientWeightGain", ofType: "json") {
-                do {
-                    let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-                    let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
-                    if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
-                        dietPlans = jsonResult
-                        
+            print("Heart Diesease")
+            if selectedCurrentAIlment == "Bone/Joints"{
+                if let path = Bundle.main.path(forResource: "bonesforWeightLoss", ofType: "json") {
+                    do {
+                        let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                        let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+                        if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
+                            dietPlans = jsonResult
+                            print(jsonResult)
+                        }
+                    } catch {
+                        print(error.localizedDescription)
                     }
-                } catch {
-                    // handle error
                 }
             }
+            else if selectedCurrentAIlment == "Heart Diesease"{
+                print("Heart Diesease")
+                if let path = Bundle.main.path(forResource: "HeartPatientWeightGain", ofType: "json") {
+                    do {
+                        let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                        let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+                        if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
+                            dietPlans = jsonResult
+                            print(jsonResult)
+                        }
+                    } catch {
+                        print(error.localizedDescription)
+                    }
+                }
+            }
+          
+         else if selectedCurrentAIlment == "Diabetes"{
+                if let path = Bundle.main.path(forResource: "DiabetesForWeightGain", ofType: "json") {
+                    do {
+                        let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                        let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+                        if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
+                            dietPlans = jsonResult
+                            print(jsonResult)
+                        }
+                    } catch {
+                        print(error.localizedDescription)
+                    }
+                }
+            }
+            else if selectedCurrentAIlment == "None"{
+                if let path = Bundle.main.path(forResource: "weightLossForNormalPerson", ofType: "json") {
+                    do {
+                        let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                        let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+                        if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
+                            dietPlans = jsonResult
+                            print(jsonResult)
+                        }
+                    } catch {
+                        print(error.localizedDescription)
+                    }
+                }
+            }
+            else{
+                print("No Data Available")
+            }
         }
+            
+            
+            
+            
+        
+        else if selectedWeight == "Weight Loss"{
+            if selectedCurrentAIlment == "Bone/Joints"{
+                if let path = Bundle.main.path(forResource: "bonesforWeightLoss", ofType: "json") {
+                    do {
+                        let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                        let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+                        if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
+                            dietPlans = jsonResult
+                            print(jsonResult)
+                        }
+                    } catch {
+                        print(error.localizedDescription)
+                    }
+                }
+            }
+            else if selectedCurrentAIlment == "Heart Disease"{
+                if let path = Bundle.main.path(forResource: "HeartPatientWeightLoss", ofType: "json") {
+                    do {
+                        let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                        let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+                        if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
+                            dietPlans = jsonResult
+                            print(jsonResult)
+                        }
+                    } catch {
+                        print(error.localizedDescription)
+                    }
+                }
+            }
+                
+            else if selectedCurrentAIlment == "Diabetes"{
+                if let path = Bundle.main.path(forResource: "DiabeticWeightLoss", ofType: "json") {
+                    do {
+                        let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                        let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+                        if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
+                            dietPlans = jsonResult
+                            print(jsonResult)
+                        }
+                    } catch {
+                        print(error.localizedDescription)
+                    }
+                }
+            }
+            else if selectedCurrentAIlment == "None"{
+                if let path = Bundle.main.path(forResource: "weightLossForNormalPerson", ofType: "json") {
+                    do {
+                        let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                        let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+                        if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
+                            dietPlans = jsonResult
+                            print(jsonResult)
+                        }
+                    } catch {
+                        print(error.localizedDescription)
+                    }
+                }
+            }
+            else{
+                print("No Data Available")
+            }
+        }
+            
+            
+        
+            
+            
         else{
             dietPlans = ["data":"No data available"] as Dictionary<String, AnyObject>
         }
@@ -48,7 +174,7 @@ class DailyDietPlanViewController: UIViewController,UITableViewDelegate,UITableV
             cell.selectionStyle = .none
         }
         else{
-            cell.textLabel?.text = "Days \(indexPath.row + 1)"//dietPlans?["DAY\(indexPath.row+1)"]!["Breakfast"] as! String
+            cell.textLabel?.text = "Day \(indexPath.row + 1)"//dietPlans?["DAY\(indexPath.row+1)"]!["Breakfast"] as! String
 
         }
         return cell

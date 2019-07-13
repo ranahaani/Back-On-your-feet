@@ -151,6 +151,10 @@ class ProfileInfoViewController: UIViewController,UIPickerViewDelegate,UIPickerV
         return age!
     }
     
+    @IBAction func saveButtonPressed(_ sender: Any) {
+        nextButtonClicked()
+
+    }
     
     @IBAction func currentAilment(_ sender: UIButton) {
         performSegue(withIdentifier: "TocurrentAilment", sender: self)

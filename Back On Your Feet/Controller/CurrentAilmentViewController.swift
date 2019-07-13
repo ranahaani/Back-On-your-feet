@@ -31,6 +31,7 @@ class CurrentAilmentViewController: UIViewController {
         else{
 
             self.navigationController?.popViewController(animated: true)
+            self.dismiss(animated: true, completion: nil)
 
           // presentingViewController?.dismiss(animated: false, completion: nil)
         }

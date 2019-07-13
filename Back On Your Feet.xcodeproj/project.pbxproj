@@ -31,6 +31,13 @@
 		EA22BED122D8EB31004AA6A2 /* medicinesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA22BED022D8EB31004AA6A2 /* medicinesTableViewCell.swift */; };
 		EA22BED322D8F08A004AA6A2 /* heartPatientMedication.json in Resources */ = {isa = PBXBuildFile; fileRef = EA22BED222D8F08A004AA6A2 /* heartPatientMedication.json */; };
 		EA22BED522D8F975004AA6A2 /* weightLossForNormalPerson.json in Resources */ = {isa = PBXBuildFile; fileRef = EA22BED422D8F975004AA6A2 /* weightLossForNormalPerson.json */; };
+		EA22BED722D98BD8004AA6A2 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA22BED622D98BD8004AA6A2 /* SettingsTableViewCell.swift */; };
+		EA22BED922D999FC004AA6A2 /* bonesforWeightLoss.json in Resources */ = {isa = PBXBuildFile; fileRef = EA22BED822D999FC004AA6A2 /* bonesforWeightLoss.json */; };
+		EA22BEDB22D99AFD004AA6A2 /* diabetesForWeightGain.json in Resources */ = {isa = PBXBuildFile; fileRef = EA22BEDA22D99AFD004AA6A2 /* diabetesForWeightGain.json */; };
+		EA22BEDD22D9ADF1004AA6A2 /* normalWeightGain.json in Resources */ = {isa = PBXBuildFile; fileRef = EA22BEDC22D9ADF1004AA6A2 /* normalWeightGain.json */; };
+		EA22BEDF22D9AE8E004AA6A2 /* boneWeightGain.json in Resources */ = {isa = PBXBuildFile; fileRef = EA22BEDE22D9AE8E004AA6A2 /* boneWeightGain.json */; };
+		EA22BEE122D9AF12004AA6A2 /* boneMedication.json in Resources */ = {isa = PBXBuildFile; fileRef = EA22BEE022D9AF12004AA6A2 /* boneMedication.json */; };
+		EA22BEE322D9AFC9004AA6A2 /* diabeticMedication.json in Resources */ = {isa = PBXBuildFile; fileRef = EA22BEE222D9AFC9004AA6A2 /* diabeticMedication.json */; };
 		EA3286F822BF57AB0044B7C1 /* infoAboutHeight.json in Resources */ = {isa = PBXBuildFile; fileRef = EA3286F722BF57AB0044B7C1 /* infoAboutHeight.json */; };
 		EA3286FB22BF78830044B7C1 /* HeightWidthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3286FA22BF78830044B7C1 /* HeightWidthViewController.swift */; };
 		EA3286FD22BF7C470044B7C1 /* HeightWidthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3286FC22BF7C470044B7C1 /* HeightWidthTableViewCell.swift */; };
@@ -73,13 +80,19 @@
 		EA22BED022D8EB31004AA6A2 /* medicinesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medicinesTableViewCell.swift; sourceTree = "<group>"; };
 		EA22BED222D8F08A004AA6A2 /* heartPatientMedication.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heartPatientMedication.json; sourceTree = "<group>"; };
 		EA22BED422D8F975004AA6A2 /* weightLossForNormalPerson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weightLossForNormalPerson.json; sourceTree = "<group>"; };
+		EA22BED622D98BD8004AA6A2 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		EA22BED822D999FC004AA6A2 /* bonesforWeightLoss.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bonesforWeightLoss.json; sourceTree = "<group>"; };
+		EA22BEDA22D99AFD004AA6A2 /* diabetesForWeightGain.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = diabetesForWeightGain.json; sourceTree = "<group>"; };
+		EA22BEDC22D9ADF1004AA6A2 /* normalWeightGain.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = normalWeightGain.json; sourceTree = "<group>"; };
+		EA22BEDE22D9AE8E004AA6A2 /* boneWeightGain.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = boneWeightGain.json; sourceTree = "<group>"; };
+		EA22BEE022D9AF12004AA6A2 /* boneMedication.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = boneMedication.json; sourceTree = "<group>"; };
+		EA22BEE222D9AFC9004AA6A2 /* diabeticMedication.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = diabeticMedication.json; sourceTree = "<group>"; };
 		EA3286F722BF57AB0044B7C1 /* infoAboutHeight.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = infoAboutHeight.json; sourceTree = "<group>"; };
 		EA3286F922BF74A70044B7C1 /* Back On Your Feet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Back On Your Feet-Bridging-Header.h"; sourceTree = "<group>"; };
 		EA3286FA22BF78830044B7C1 /* HeightWidthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightWidthViewController.swift; sourceTree = "<group>"; };
 		EA3286FC22BF7C470044B7C1 /* HeightWidthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightWidthTableViewCell.swift; sourceTree = "<group>"; };
 		EA465A5922D60C74007F2E48 /* HealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HealthViewController.swift; path = "Back On Your Feet/Controller/HealthViewController.swift"; sourceTree = SOURCE_ROOT; };
 		EA465A5B22D60E6F007F2E48 /* DiabeticWeightLoss.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DiabeticWeightLoss.json; sourceTree = "<group>"; };
-		EA465A5C22D60F27007F2E48 /* bonesDietPlan.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bonesDietPlan.json; sourceTree = "<group>"; };
 		EA465A5F22D61CAB007F2E48 /* HeartPatientWeightGain.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HeartPatientWeightGain.json; sourceTree = "<group>"; };
 		EA465A6122D62668007F2E48 /* DietPlanDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietPlanDetailsViewController.swift; sourceTree = "<group>"; };
 		EA63DBFB22D24EC500A3882C /* Back On Your Feet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Back On Your Feet.entitlements"; sourceTree = "<group>"; };
@@ -143,8 +156,13 @@
 			isa = PBXGroup;
 			children = (
 				EA465A5B22D60E6F007F2E48 /* DiabeticWeightLoss.json */,
+				EA22BEDA22D99AFD004AA6A2 /* diabetesForWeightGain.json */,
+				EA22BEE022D9AF12004AA6A2 /* boneMedication.json */,
+				EA22BEE222D9AFC9004AA6A2 /* diabeticMedication.json */,
 				EA22BED422D8F975004AA6A2 /* weightLossForNormalPerson.json */,
-				EA465A5C22D60F27007F2E48 /* bonesDietPlan.json */,
+				EA22BEDE22D9AE8E004AA6A2 /* boneWeightGain.json */,
+				EA22BEDC22D9ADF1004AA6A2 /* normalWeightGain.json */,
+				EA22BED822D999FC004AA6A2 /* bonesforWeightLoss.json */,
 				EA22BED222D8F08A004AA6A2 /* heartPatientMedication.json */,
 				EA465A5F22D61CAB007F2E48 /* HeartPatientWeightGain.json */,
 				EA3286F722BF57AB0044B7C1 /* infoAboutHeight.json */,
@@ -186,6 +204,7 @@
 				EA22BED022D8EB31004AA6A2 /* medicinesTableViewCell.swift */,
 				EA465A5922D60C74007F2E48 /* HealthViewController.swift */,
 				3510538122781E2000609CA9 /* SearchTableViewCell.swift */,
+				EA22BED622D98BD8004AA6A2 /* SettingsTableViewCell.swift */,
 				EAE3D0CE22C0931700E6E26C /* WeeklyCollectionViewCell.swift */,
 				EAE3D0D022C0973400E6E26C /* CustomFlowLayout.swift */,
 				EA3286FC22BF7C470044B7C1 /* HeightWidthTableViewCell.swift */,
@@ -286,12 +305,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA22BEE122D9AF12004AA6A2 /* boneMedication.json in Resources */,
 				EA22BED322D8F08A004AA6A2 /* heartPatientMedication.json in Resources */,
 				EA465A6022D61CAB007F2E48 /* HeartPatientWeightGain.json in Resources */,
 				355DEDDE225F4CFF002F44EE /* LaunchScreen.storyboard in Resources */,
+				EA22BEDB22D99AFD004AA6A2 /* diabetesForWeightGain.json in Resources */,
+				EA22BEE322D9AFC9004AA6A2 /* diabeticMedication.json in Resources */,
 				35AC1B6A2277383700F0C837 /* GoogleService-Info.plist in Resources */,
 				355DEDDB225F4CFF002F44EE /* Assets.xcassets in Resources */,
+				EA22BEDF22D9AE8E004AA6A2 /* boneWeightGain.json in Resources */,
+				EA22BED922D999FC004AA6A2 /* bonesforWeightLoss.json in Resources */,
 				EA3286F822BF57AB0044B7C1 /* infoAboutHeight.json in Resources */,
+				EA22BEDD22D9ADF1004AA6A2 /* normalWeightGain.json in Resources */,
 				EA22BED522D8F975004AA6A2 /* weightLossForNormalPerson.json in Resources */,
 				355DEDD9225F4CFD002F44EE /* Main.storyboard in Resources */,
 			);
@@ -373,6 +398,7 @@
 			files = (
 				35EADBEE227CA0A10004B3AF /* HomeViewController.swift in Sources */,
 				3510538222781E2000609CA9 /* SearchTableViewCell.swift in Sources */,
+				EA22BED722D98BD8004AA6A2 /* SettingsTableViewCell.swift in Sources */,
 				EAC21D0D22BB444D00E7A7AE /* PhysicalyActivityViewController.swift in Sources */,
 				35AC1B6E2277391800F0C837 /* SignupViewController.swift in Sources */,
 				EA0827B622BCBE91006C59B2 /* GenderViewController.swift in Sources */,
