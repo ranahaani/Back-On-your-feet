@@ -11,7 +11,11 @@ import FirebaseFirestore
 import SVProgressHUD
 import FirebaseAuth
 import FirebaseAuth
-class SettingsViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+class SettingsViewController: UIViewController,UITableViewDataSource,UITableViewDelegate,currentAilmentDelegate,PhysicalyActivityDelegate,GenderDelegate {
+    
+    var currentAilment:String?
+    var gender:String?
+    var physicalActivitys:String?
     @IBOutlet weak var disPlayNameLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     let db = Firestore.firestore()
@@ -20,7 +24,7 @@ class SettingsViewController: UIViewController,UITableViewDataSource,UITableView
     var settingsdata:[String:Any] = ["Ailment":"H"]
     override func viewDidLoad() {
         super.viewDidLoad()
-       disPlayNameLabel.text = Auth.auth().currentUser?.email
+        disPlayNameLabel.text = Auth.auth().currentUser?.email
         let uid = Auth.auth().currentUser?.uid
         let docRef = db.collection("profileInfo").document(uid!)
         SVProgressHUD.show(withStatus: "Loading...")
@@ -41,11 +45,11 @@ class SettingsViewController: UIViewController,UITableViewDataSource,UITableView
         // Do any additional setup after loading the view.
     }
     
-     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return settingsdata.count
     }
-     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SettingsTableViewCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SettingsTableViewCell
         if settingsdata.count == 1{
             cell.textLabel?.text = "Sorry No Data Available Now"
         }
@@ -56,55 +60,98 @@ class SettingsViewController: UIViewController,UITableViewDataSource,UITableView
             cell.detailTextLabel?.text = Array(settingsdata)[indexPath.row].value as? String
             // cell.textLabel?.text = settingsdata["Gender"] as! String
         }
-            return cell
+        return cell
         
+    }
+    func chooseCurrentAilment(selectedAilment: String) {
+        currentAilment = selectedAilment
+    }
+    
+    func choosePhysicalyActivity(selectedphysicalActivity: String) {
+        physicalActivitys = selectedphysicalActivity
+    }
+    
+    func chooseGender(selectedGender: String) {
+        gender = selectedGender
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "TocurrentAilment" {
+            let destination = segue.destination as! CurrentAilmentViewController
+            destination.delegate = self
+            
+        }
+        else if segue.identifier == "toPhysicalActivity" {
+            let destination = segue.destination as! PhysicalyActivityViewController
+            destination.delegate = self
+        }
+        else if segue.identifier == "toGender" {
+            let destination = segue.destination as! GenderViewController
+            destination.delegate = self
+        }
     }
     @objc func editButtonPres(_ sender: UIButton){
         
-        let alertVC = UIAlertController(title: Array(settingsdata)[sender.tag].key, message: "Put your \(Array(settingsdata)[sender.tag].key)", preferredStyle: .alert)
-        alertVC.addTextField { (textfield) in
-//            settingsdata.updateValue(textfield.text, forKey: Array(settingsdata)[sender.tag].key)
-
+        
+        if Array(settingsdata)[sender.tag].key == "currentAilment"{
+            performSegue(withIdentifier: "TocurrentAilment", sender: self)
         }
-        let okButton = UIAlertAction(title: "Ok", style: .default) { (_) in
-            if let input = alertVC.textFields?[0]{
-                self.settingsdata.updateValue(input.text!, forKey: Array(self.settingsdata)[sender.tag].key)
-                
-                
-                let docRef = self.db.collection("profileInfo").document(self.uid!)
-                SVProgressHUD.show(withStatus: "Loading...")
-                // Set the "capital" field of the city 'DC'
-                docRef.updateData([
-                    Array(self.settingsdata)[sender.tag].key: input.text!
-                ]) { err in
-                    if let err = err {
-                        print("Error updating document: \(err)")
-                        SVProgressHUD.dismiss()
-                        SVProgressHUD.showError(withStatus: err.localizedDescription)
-                    } else {
-                        self.tableView.reloadData()
-                        SVProgressHUD.dismiss()
-                        SVProgressHUD.showSuccess(withStatus: "Updated successfully")
-                    }
-                }
+        else if Array(settingsdata)[sender.tag].key == "physicalActivity"{
+            performSegue(withIdentifier: "toPhysicalActivity", sender: self)
+        }
+        else if Array(settingsdata)[sender.tag].key == "Gender"{
+            performSegue(withIdentifier: "ToGender", sender: self)
+        }
+            
+        else {
+            let alertVC = UIAlertController(title: Array(settingsdata)[sender.tag].key, message: "Put your \(Array(settingsdata)[sender.tag].key)", preferredStyle: .alert)
+            alertVC.addTextField { (textfield) in
+                //            settingsdata.updateValue(textfield.text, forKey: Array(settingsdata)[sender.tag].key)
                 
             }
+            let okButton = UIAlertAction(title: "Ok", style: .default) { (_) in
+                if let input = alertVC.textFields?[0]{
+                    self.settingsdata.updateValue(input.text!, forKey: Array(self.settingsdata)[sender.tag].key)
+                    
+                    
+                    let docRef = self.db.collection("profileInfo").document(self.uid!)
+                    SVProgressHUD.show(withStatus: "Loading...")
+                    // Set the "capital" field of the city 'DC'
+                    docRef.updateData([
+                        Array(self.settingsdata)[sender.tag].key: input.text!
+                    ]) { err in
+                        if let err = err {
+                            print("Error updating document: \(err)")
+                            SVProgressHUD.dismiss()
+                            SVProgressHUD.showError(withStatus: err.localizedDescription)
+                        } else {
+                            self.tableView.reloadData()
+                            SVProgressHUD.dismiss()
+                            SVProgressHUD.showSuccess(withStatus: "Updated successfully")
+                        }
+                    }
+                    
+                }
+            }
+            let cancelButton = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            alertVC.addAction(okButton)
+            alertVC.addAction(cancelButton)
+            
+            present(alertVC,animated: true)
+            
         }
-        let cancelButton = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-        alertVC.addAction(okButton)
-        alertVC.addAction(cancelButton)
         
-        present(alertVC,animated: true)
+        
+        
         
         print(Array(settingsdata)[sender.tag].key)
     }
     @IBAction func logoutButton(_ sender:UIButton){
         
-        if let id = Auth.auth().currentUser?.uid{
+        if (Auth.auth().currentUser?.uid) != nil{
             do {
                 try Auth.auth().signOut()
                 self.performSegue(withIdentifier: "BackToSignin", sender: nil)
-        }
+            }
             catch let err {
                 print(err.localizedDescription)
             }
@@ -112,15 +159,15 @@ class SettingsViewController: UIViewController,UITableViewDataSource,UITableView
         
     }
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
     
     
 }
